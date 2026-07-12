@@ -49,6 +49,11 @@ a {
   filter: drop-shadow(0 8px 2px rgb(23 23 20 / 0.04));
 }
 
+.debrief-section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}
+
 ::selection {
   background: #f1cf4f;
   color: #171714;
