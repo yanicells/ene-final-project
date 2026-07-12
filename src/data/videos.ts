@@ -1,6 +1,6 @@
 import type { FeedVideo } from "@/types/experience";
 
-export const feedVideos = [
+export const feedVideos: readonly FeedVideo[] = [
   {
     id: "organic-interest",
     sequenceLabel: "Interest",
@@ -266,7 +266,7 @@ export const feedVideos = [
       "Urgency can shorten the time between interest and action. Leaving the feed creates space to decide without the countdown.",
     citationIds: ["friestad-1994", "lyngs-2019"],
   },
-] as const satisfies readonly FeedVideo[];
+] as const;
 
 export function getFeedVideo(videoId: string) {
   return feedVideos.find((video) => video.id === videoId);

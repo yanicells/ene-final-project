@@ -129,6 +129,6 @@ export const researchSources = [
   },
 ] as const satisfies readonly ResearchSource[];
 
-export const sourcesById = new Map(
+export const sourcesById = new Map<string, ResearchSource>(
   researchSources.map((source) => [source.id, source] as const),
 );
