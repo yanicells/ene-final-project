@@ -31,7 +31,7 @@
 - Keep the user engaged through a clear path. At every moment, make the primary subject, the next place to look, and the next available action obvious.
 - Maintain one dominant focal point per beat. Use hierarchy, progressive disclosure, motion, and directional cues to guide attention without showing every explanation at once.
 - For the opening cutscene, keep the phone centered and let short narration or subtitle-like text appear around it as the feed changes.
-- During the game, keep the phone feed as the main focus. Place controls close to the phone and use supporting areas for the feed-drift meter, signals collected from the user's behavior, and short research-based guidance that updates after decisions.
+- During the game, keep the phone feed as the main focus. Place the custom decision controls beside the phone on desktop, not inside it, and use supporting areas for the feed-drift meter, signals collected from the user's behavior, and short research-based guidance that updates after decisions.
 - Make the phone feel like a real device rather than a generic rounded rectangle. Include believable hardware framing, screen proportions, safe areas, and mobile-scale spacing without letting decorative device chrome overpower the content.
 - Make the simulated feed immediately recognizable as a TikTok-style short-video interface through full-screen vertical media, creator and caption placement, playback rhythm, disclosure placement, and mobile-scale typography.
 - Do not reproduce decorative platform controls that the simulation does not support. Avoid dead profile links, navigation items, action icons, or other elements that look clickable but have no outcome.
@@ -39,7 +39,7 @@
 - Use original icons, labels, colors, and branding rather than making a pixel-for-pixel TikTok replica.
 - Supporting panels should feel responsive to the user's actions, not like static marketing feature cards.
 - Treat feed drift as a neutral explanatory metaphor, not a health bar, morality score, or win-versus-capitalism mechanic. The experience should reveal influence without declaring that the user won or failed.
-- Preserve the same visual path on smaller screens through a clear linear order and progressive disclosure rather than squeezing the full desktop dashboard into one view.
+- Preserve the same visual path on smaller screens through a clear linear order and progressive disclosure rather than squeezing the full desktop dashboard into one view. Move the decision controls directly below the phone when there is not enough room beside it.
 
 ## Content and research
 
