@@ -37,7 +37,7 @@ export function PhoneFrame({
   };
 
   return (
-    <div className="phone-shell relative mx-auto w-full max-w-[18.5rem] lg:max-w-[16.5rem] min-[1200px]:max-w-[18.5rem] min-[1400px]:max-w-[20rem]">
+    <div className="phone-shell relative mx-auto w-full max-w-[18.5rem] lg:max-w-[16.5rem] xl:max-w-[19rem] 2xl:max-w-[20rem]">
       <div className="phone-hardware relative overflow-hidden rounded-[3.15rem] border-[0.48rem] border-[#1b1b1a] bg-[#151514] shadow-[0_30px_80px_rgba(34,31,24,0.24),0_3px_12px_rgba(34,31,24,0.18)]">
         <div className="absolute left-1/2 top-2 z-30 h-6 w-[5.6rem] -translate-x-1/2 rounded-full bg-[#111110] shadow-[inset_0_-1px_0_rgba(255,255,255,0.08)]" />
 
@@ -84,7 +84,7 @@ export function PhoneFrame({
             </motion.div>
           </AnimatePresence>
 
-          <div className="absolute inset-x-5 top-4 z-20 flex items-center justify-between text-[0.61rem] font-medium text-white/80">
+          <div className="absolute inset-x-5 top-4 z-20 flex items-center justify-between text-[0.68rem] font-semibold text-white">
             <span>For You</span>
             <span className="rounded-full bg-black/35 px-2 py-1 backdrop-blur-md">
               Simulation
@@ -125,17 +125,17 @@ export function PhoneFrame({
             </button>
           ) : null}
 
-          <div className="absolute inset-x-4 bottom-5 z-20 text-white">
+          <div className="absolute inset-x-3 bottom-3 z-20 rounded-[1.35rem] border border-white/10 bg-black/65 p-3.5 text-white shadow-[0_14px_34px_rgba(0,0,0,0.24)] backdrop-blur-md">
             <p className="mb-2 inline-flex rounded-full bg-black/35 px-2.5 py-1 font-mono text-[0.58rem] uppercase tracking-[0.12em] backdrop-blur-md">
               {showVideo ? "Production video" : "Production still"}
             </p>
-            <p className="text-[0.72rem] font-semibold text-white/90">
+            <p className="text-[0.78rem] font-semibold text-white">
               {video.creator}
             </p>
-            <h3 className="mt-1.5 max-w-[16rem] text-xl font-semibold leading-[1.08] tracking-[-0.035em]">
+            <h3 className="mt-1.5 max-w-[17rem] text-[1.35rem] font-semibold leading-[1.08] tracking-[-0.035em] [text-shadow:0_1px_4px_rgb(0_0_0/0.55)]">
               {video.title}
             </h3>
-            <p className="mt-2 max-w-[17rem] text-[0.72rem] leading-5 text-white/78">
+            <p className="mt-2 max-w-[17rem] text-[0.78rem] font-medium leading-[1.15rem] text-white">
               {video.caption}
             </p>
             {video.disclosure ? (

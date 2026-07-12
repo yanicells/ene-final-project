@@ -1,4 +1,4 @@
-import { ArrowDownRight } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 export function ProjectIntro() {
   return (
@@ -32,10 +32,10 @@ export function ProjectIntro() {
               href="#opening"
               className="group flex w-fit shrink-0 items-center gap-3 rounded-full bg-stone-950 px-5 py-3 text-sm font-semibold text-[#f4f3ef] transition hover:bg-stone-800 active:scale-[0.98]"
             >
-              Begin experience
-              <ArrowDownRight
+              Scroll to begin
+              <ArrowDown
                 aria-hidden="true"
-                className="transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5"
+                className="transition-transform group-hover:translate-y-1"
                 size={17}
                 strokeWidth={1.8}
               />
