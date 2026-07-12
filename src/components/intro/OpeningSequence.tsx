@@ -88,7 +88,7 @@ export function OpeningSequence() {
       <div className="sticky top-14 flex min-h-[calc(100dvh-3.5rem)] items-center overflow-hidden px-5 py-10 md:px-8">
         <div className="relative mx-auto grid w-full max-w-[1480px] gap-4 lg:block lg:min-h-[calc(100dvh-8rem)]">
           <div className="mb-4 lg:absolute lg:left-0 lg:top-0">
-            <p className="font-mono text-[0.65rem] uppercase tracking-[0.14em] text-stone-500">
+            <p className="font-mono text-[0.65rem] uppercase tracking-[0.14em] text-stone-600">
               How the feed changed
             </p>
           </div>

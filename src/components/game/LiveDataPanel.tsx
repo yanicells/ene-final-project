@@ -31,14 +31,14 @@ export function LiveDataPanel({
       <div className="mt-7 border-t border-stone-200 pt-6">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <p className="font-mono text-[0.64rem] uppercase tracking-[0.14em] text-stone-500">
+            <p className="font-mono text-[0.64rem] uppercase tracking-[0.14em] text-stone-600">
               Simulation data
             </p>
             <h3 className="mt-2 text-xl font-semibold tracking-[-0.035em] text-stone-950">
               Data collected about you
             </h3>
           </div>
-          <span className="rounded-full border border-stone-300 px-2.5 py-1 font-mono text-[0.62rem] text-stone-500">
+          <span className="rounded-full border border-stone-300 px-2.5 py-1 font-mono text-[0.62rem] text-stone-600">
             {decisions.length}/6
           </span>
         </div>
@@ -59,7 +59,7 @@ export function LiveDataPanel({
                 >
                   <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-stone-700" />
                   <div>
-                    <p className="text-xs font-semibold capitalize text-stone-500">
+                    <p className="text-xs font-semibold capitalize text-stone-600">
                       {decision.signalType} signal
                     </p>
                     <p className="mt-0.5 text-sm leading-5 text-stone-800">
@@ -70,7 +70,7 @@ export function LiveDataPanel({
               ))
             ) : (
               <motion.p
-                className="max-w-xs text-sm leading-6 text-stone-500"
+                className="max-w-xs text-sm leading-6 text-stone-600"
                 initial={false}
                 animate={{ opacity: 1 }}
               >

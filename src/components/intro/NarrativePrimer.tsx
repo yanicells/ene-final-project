@@ -23,7 +23,7 @@ export function NarrativePrimer() {
         <div className="mt-16 grid gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:gap-24">
           <MotionReveal>
             <div className="border-t border-stone-400 pt-6">
-              <p className="font-mono text-[0.65rem] uppercase tracking-[0.14em] text-stone-500">
+              <p className="font-mono text-[0.65rem] uppercase tracking-[0.14em] text-stone-600">
                 Grand narrative
               </p>
               <p className="mt-5 text-3xl font-semibold leading-[1.1] tracking-[-0.045em] text-stone-950">
@@ -85,7 +85,7 @@ export function NarrativePrimer() {
             <h3 className="text-2xl font-semibold tracking-[-0.04em] text-stone-950">
               Go through six fixed posts.
             </h3>
-            <p className="mt-2 max-w-xl text-sm leading-6 text-stone-500">
+            <p className="mt-2 max-w-xl text-sm leading-6 text-stone-600">
               Decide what deserves your attention. Your choices affect the
               simulation, but there is no perfect score.
             </p>

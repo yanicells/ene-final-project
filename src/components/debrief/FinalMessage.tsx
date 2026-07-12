@@ -9,7 +9,7 @@ export function FinalMessage() {
       <MotionReveal className="mx-auto w-full max-w-[1480px]">
         <p className="max-w-6xl text-[clamp(3.6rem,8vw,8rem)] font-semibold leading-[0.87] tracking-[-0.075em] text-stone-950">
           Keep your interests.
-          <span className="block text-stone-400">
+          <span className="block text-stone-500">
             Question who is arranging what comes next.
           </span>
         </p>

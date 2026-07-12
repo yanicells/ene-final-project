@@ -20,14 +20,14 @@ export function FeedDriftMeter({ value, compact = false }: FeedDriftMeterProps) 
     <div className={compact ? "space-y-2" : "space-y-4"}>
       <div className="flex items-end justify-between gap-4">
         <div>
-          <p className="font-mono text-[0.65rem] uppercase tracking-[0.14em] text-stone-500">
+          <p className="font-mono text-[0.65rem] uppercase tracking-[0.14em] text-stone-600">
             Feed drift
           </p>
           <p className="mt-1 text-lg font-medium tracking-[-0.02em] text-stone-900">
             {label}
           </p>
         </div>
-        <output className="font-mono text-sm tabular-nums text-stone-500">
+        <output className="font-mono text-sm tabular-nums text-stone-600">
           {value > 0 ? "+" : ""}
           {value}
         </output>
@@ -55,7 +55,7 @@ export function FeedDriftMeter({ value, compact = false }: FeedDriftMeterProps) 
         />
       </div>
 
-      <div className="flex justify-between font-mono text-[0.62rem] uppercase tracking-[0.1em] text-stone-500">
+      <div className="flex justify-between font-mono text-[0.62rem] uppercase tracking-[0.1em] text-stone-600">
         <span>Interest-led</span>
         <span>Sales-led</span>
       </div>

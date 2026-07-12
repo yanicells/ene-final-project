@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "For You, For Profit",
   description:
     "An interactive research experience about recommendation feeds, attention, and user agency.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

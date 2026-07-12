@@ -56,7 +56,7 @@ export function ResultsOverview({ state, onReset }: ResultsOverviewProps) {
             key={label}
             className="border-b border-stone-300 px-0 py-5 sm:px-5 lg:border-b-0 lg:border-r lg:first:pl-0 lg:last:border-r-0"
           >
-            <dt className="text-sm text-stone-500">{label}</dt>
+            <dt className="text-sm text-stone-600">{label}</dt>
             <dd className="mt-2 font-mono text-3xl tracking-[-0.04em] text-stone-950">
               {value}
             </dd>

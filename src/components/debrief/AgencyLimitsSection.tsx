@@ -29,7 +29,7 @@ export function AgencyLimitsSection() {
 
         <div className="mt-16 grid gap-5 lg:grid-cols-[0.78fr_1.22fr]">
           <MotionReveal className="rounded-[1.6rem] border border-stone-300 bg-[#f8f7f3] p-6 md:p-8">
-            <p className="text-sm font-semibold text-stone-500">You can control</p>
+            <p className="text-sm font-semibold text-stone-600">You can control</p>
             <ul className="mt-8 space-y-5">
               {userControls.map((item) => (
                 <li key={item} className="text-lg font-medium text-stone-900">

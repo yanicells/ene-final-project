@@ -29,7 +29,7 @@ export function MicroNarrativeSection() {
             <div className="absolute -left-3 top-0 grid size-6 place-items-center rounded-full bg-stone-950 text-[#f4f3ef]">
               <CornerDownRight aria-hidden="true" size={13} />
             </div>
-            <p className="text-sm font-semibold text-stone-500">Inside the platform</p>
+            <p className="text-sm font-semibold text-stone-600">Inside the platform</p>
             <ul className="mt-7 space-y-3">
               {platformChoices.map((choice) => (
                 <li
@@ -47,7 +47,7 @@ export function MicroNarrativeSection() {
             <div className="absolute -left-3 top-10 grid size-6 place-items-center rounded-full border border-stone-400 bg-[#f4f3ef] text-stone-700">
               <CornerDownRight aria-hidden="true" size={13} />
             </div>
-            <p className="text-sm font-semibold text-stone-500">Beyond the controls</p>
+            <p className="text-sm font-semibold text-stone-600">Beyond the controls</p>
             <p className="mt-4 text-3xl font-semibold leading-[1.12] tracking-[-0.045em] text-stone-950 md:text-4xl">
               Feed controls help decide what appears. Critical awareness helps
               decide what deserves attention, belief, sharing, or money.

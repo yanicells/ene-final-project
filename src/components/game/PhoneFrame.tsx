@@ -91,7 +91,15 @@ export function PhoneFrame({
             </span>
           </div>
 
-          <div className="absolute inset-x-4 top-12 z-20 flex gap-1" aria-label={`Post ${videoIndex + 1} of ${totalVideos}`}>
+          <div
+            className="absolute inset-x-4 top-12 z-20 flex gap-1"
+            role="progressbar"
+            aria-label="Feed progress"
+            aria-valuemin={1}
+            aria-valuemax={totalVideos}
+            aria-valuenow={videoIndex + 1}
+            aria-valuetext={`Post ${videoIndex + 1} of ${totalVideos}`}
+          >
             {Array.from({ length: totalVideos }, (_, index) => (
               <span
                 key={index}

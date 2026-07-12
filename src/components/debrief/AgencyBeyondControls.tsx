@@ -94,7 +94,7 @@ export function AgencyBeyondControls() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={reduceMotion ? undefined : { opacity: 0, y: -8 }}
                 >
-                  <p className="font-mono text-[0.62rem] uppercase tracking-[0.12em] text-stone-500">
+                  <p className="font-mono text-[0.62rem] uppercase tracking-[0.12em] text-stone-600">
                     Pause question
                   </p>
                   <h3 className="mt-4 text-3xl font-semibold leading-[1.05] tracking-[-0.045em] text-stone-950">

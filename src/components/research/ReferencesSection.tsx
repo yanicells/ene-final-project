@@ -50,7 +50,7 @@ export function ReferencesSection() {
                         <p className="text-sm leading-6 text-stone-700">
                           {source.apa}
                         </p>
-                        <p className="mt-3 text-xs leading-5 text-stone-500">
+                        <p className="mt-3 text-xs leading-5 text-stone-600">
                           {source.note}
                         </p>
                         <a
@@ -71,7 +71,7 @@ export function ReferencesSection() {
           </div>
         </div>
 
-        <footer className="mt-20 flex flex-col gap-3 border-t border-stone-400 pt-6 text-xs text-stone-500 sm:flex-row sm:items-center sm:justify-between">
+        <footer className="mt-20 flex flex-col gap-3 border-t border-stone-400 pt-6 text-xs text-stone-600 sm:flex-row sm:items-center sm:justify-between">
           <p>ENE 13.05i Major Task 2</p>
           <p>Research-informed simulation. Local state only.</p>
         </footer>

@@ -72,13 +72,13 @@ export function FeedGame() {
       animate={{ opacity: 1, y: 0 }}
       exit={reduceMotion ? undefined : { opacity: 0, y: 16 }}
     >
-      <p className="font-mono text-[0.58rem] uppercase tracking-[0.12em] text-stone-500">
+      <p className="font-mono text-[0.58rem] uppercase tracking-[0.12em] text-stone-600">
         Simulated product preview
       </p>
       <div className="mt-3 flex items-end justify-between gap-3">
         <div>
           <p className="text-lg font-semibold tracking-[-0.03em]">Luma Arc</p>
-          <p className="mt-1 text-xs leading-5 text-stone-500">
+          <p className="mt-1 text-xs leading-5 text-stone-600">
             Opening this preview records commercial intent in the simulation.
           </p>
         </div>
@@ -101,14 +101,14 @@ export function FeedGame() {
       <div className="mx-auto max-w-[1480px]">
         <div className="mb-5 flex items-end justify-between gap-5 px-1">
           <div>
-            <p className="font-mono text-[0.65rem] uppercase tracking-[0.14em] text-stone-500">
+            <p className="font-mono text-[0.65rem] uppercase tracking-[0.14em] text-stone-600">
               Guided feed simulation
             </p>
             <h2 className="mt-2 text-2xl font-semibold tracking-[-0.04em] text-stone-950">
               Take back the feed
             </h2>
           </div>
-          <p className="font-mono text-xs text-stone-500">
+          <p className="font-mono text-xs text-stone-600">
             {state.currentVideoIndex + 1} / {feedVideos.length}
           </p>
         </div>

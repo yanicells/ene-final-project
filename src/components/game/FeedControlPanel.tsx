@@ -59,7 +59,7 @@ export function FeedControlPanel({
                 <span className="block text-base font-semibold text-stone-900">
                   {control.label}
                 </span>
-                <span className="mt-1 block text-sm leading-6 text-stone-500">
+                <span className="mt-1 block text-sm leading-6 text-stone-600">
                   {control.description}
                 </span>
               </span>
@@ -69,7 +69,7 @@ export function FeedControlPanel({
       </div>
 
       <div className="mt-8 flex items-center justify-between gap-5">
-        <p className="font-mono text-xs text-stone-500">
+        <p className="font-mono text-xs text-stone-600">
           {selected.length} selected, choose 2 or 3
         </p>
         <button

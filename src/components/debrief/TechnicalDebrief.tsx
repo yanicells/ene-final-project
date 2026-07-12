@@ -23,7 +23,7 @@ export function TechnicalDebrief() {
     <section className="debrief-section px-5 py-24 md:px-8 md:py-36">
       <div className="mx-auto max-w-[1480px]">
         <MotionReveal className="max-w-4xl">
-          <p className="font-mono text-xs uppercase tracking-[0.14em] text-stone-500">
+          <p className="font-mono text-xs uppercase tracking-[0.14em] text-stone-600">
             What the system saw
           </p>
           <h2 className="mt-5 text-5xl font-semibold leading-[0.94] tracking-[-0.06em] text-stone-950 md:text-7xl">
@@ -59,7 +59,7 @@ export function TechnicalDebrief() {
           <MotionReveal delay={0.08} className="flex flex-col items-center justify-center py-7">
             <div className="grid size-48 place-items-center rounded-full border border-stone-400 bg-[#f8f7f3] p-6 text-center shadow-[0_20px_50px_rgba(32,28,20,0.08)]">
               <div>
-                <p className="font-mono text-[0.6rem] uppercase tracking-[0.12em] text-stone-500">
+                <p className="font-mono text-[0.6rem] uppercase tracking-[0.12em] text-stone-600">
                   Prediction
                 </p>
                 <p className="mt-2 text-xl font-semibold leading-[1.05] tracking-[-0.04em] text-stone-950">
@@ -68,7 +68,7 @@ export function TechnicalDebrief() {
               </div>
             </div>
             <ArrowDown aria-hidden="true" className="mt-5 text-stone-400" size={22} />
-            <p className="mt-3 max-w-[12rem] text-center text-xs leading-5 text-stone-500">
+            <p className="mt-3 max-w-[12rem] text-center text-xs leading-5 text-stone-600">
               Enough signals to rank another post
             </p>
           </MotionReveal>

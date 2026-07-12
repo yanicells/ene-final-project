@@ -24,7 +24,7 @@ export function BeyondSellingSection() {
     <section className="debrief-section px-5 py-24 md:px-8 md:py-36">
       <div className="mx-auto max-w-[1480px]">
         <MotionReveal className="max-w-5xl">
-          <p className="font-mono text-xs uppercase tracking-[0.14em] text-stone-500">
+          <p className="font-mono text-xs uppercase tracking-[0.14em] text-stone-600">
             Beyond selling
           </p>
           <h2 className="mt-5 text-5xl font-semibold leading-[0.94] tracking-[-0.06em] text-stone-950 md:text-7xl">

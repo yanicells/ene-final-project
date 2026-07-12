@@ -45,7 +45,7 @@ export function GrandNarrativeSection() {
                   </div>
                 </div>
                 {index < feedVideos.length - 1 ? (
-                  <span className="absolute -right-3 top-1/2 z-10 hidden size-6 -translate-y-1/2 place-items-center rounded-full border border-stone-300 bg-[#f4f3ef] text-stone-500 xl:grid">
+                  <span className="absolute -right-3 top-1/2 z-10 hidden size-6 -translate-y-1/2 place-items-center rounded-full border border-stone-300 bg-[#f4f3ef] text-stone-600 xl:grid">
                     <ArrowRight aria-hidden="true" size={12} strokeWidth={1.7} />
                   </span>
                 ) : null}
@@ -58,7 +58,7 @@ export function GrandNarrativeSection() {
           <p className="text-3xl font-semibold leading-[1.08] tracking-[-0.045em] text-stone-950 md:text-4xl">
             The system does not need to invent desire.
           </p>
-          <p className="text-3xl font-semibold leading-[1.08] tracking-[-0.045em] text-stone-400 md:text-4xl">
+          <p className="text-3xl font-semibold leading-[1.08] tracking-[-0.045em] text-stone-500 md:text-4xl">
             It can capture a real interest and repeatedly redirect it toward
             consumption.
           </p>

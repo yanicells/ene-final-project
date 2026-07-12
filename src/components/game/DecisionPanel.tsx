@@ -68,14 +68,14 @@ export function DecisionPanel({
 
   return (
     <div className="flex min-h-full flex-col justify-center">
-      <p className="font-mono text-[0.65rem] uppercase tracking-[0.14em] text-stone-500">
+      <p className="font-mono text-[0.65rem] uppercase tracking-[0.14em] text-stone-600">
         {video.sequenceLabel}
       </p>
       <h3 className="mt-3 text-3xl font-semibold leading-[1.02] tracking-[-0.045em] text-stone-950">
         {decision ? "Signal recorded" : "What do you do?"}
       </h3>
 
-      <details className="mt-4 text-xs leading-5 text-stone-500">
+      <details className="mt-4 text-xs leading-5 text-stone-600">
         <summary className="w-fit cursor-pointer font-semibold text-stone-600 transition hover:text-stone-950">
           Read media transcript
         </summary>
@@ -126,7 +126,7 @@ export function DecisionPanel({
                     <Icon aria-hidden="true" size={17} strokeWidth={1.8} />
                     {action.label}
                   </span>
-                  <span className="font-mono text-xs text-stone-400 transition group-hover:text-stone-700">
+                  <span className="font-mono text-xs text-stone-600 transition group-hover:text-stone-700">
                     {action.feedDriftDelta > 0 ? "+" : ""}
                     {action.feedDriftDelta}
                   </span>

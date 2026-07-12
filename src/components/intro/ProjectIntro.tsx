@@ -8,10 +8,10 @@ export function ProjectIntro() {
     >
       <div className="mx-auto grid w-full max-w-[1480px] gap-16 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
         <div className="lg:pb-3">
-          <p className="font-mono text-xs uppercase tracking-[0.14em] text-stone-500">
+          <p className="font-mono text-xs uppercase tracking-[0.14em] text-stone-600">
             ENE 13.05i Major Task 2
           </p>
-          <p className="mt-5 max-w-sm text-sm leading-6 text-stone-500">
+          <p className="mt-5 max-w-sm text-sm leading-6 text-stone-600">
             A research-informed simulation about attention, recommendation, and
             the stories a feed can assemble around an ordinary interest.
           </p>
@@ -20,7 +20,7 @@ export function ProjectIntro() {
         <div>
           <h1 className="max-w-5xl text-[clamp(4.2rem,9vw,9.2rem)] font-semibold leading-[0.82] tracking-[-0.075em] text-stone-950">
             For You,
-            <span className="block text-stone-400">For Profit.</span>
+            <span className="block text-stone-500">For Profit.</span>
           </h1>
           <div className="mt-9 flex flex-col gap-7 border-t border-stone-300 pt-7 sm:flex-row sm:items-end sm:justify-between">
             <p className="max-w-xl text-lg leading-8 text-stone-650">

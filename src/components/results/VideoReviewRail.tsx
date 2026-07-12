@@ -25,7 +25,7 @@ export function VideoReviewRail({ decisions }: VideoReviewRailProps) {
           <h3 className="text-2xl font-semibold tracking-[-0.04em] text-stone-950">
             Review each post
           </h3>
-          <p className="mt-2 text-sm text-stone-500">
+          <p className="mt-2 text-sm text-stone-600">
             Your choice, its signal, and the research behind the moment.
           </p>
         </div>
@@ -79,20 +79,20 @@ export function VideoReviewRail({ decisions }: VideoReviewRailProps) {
                 </p>
               </div>
               <div className="p-5">
-                <p className="font-mono text-[0.62rem] uppercase tracking-[0.12em] text-stone-500">
+                <p className="font-mono text-[0.62rem] uppercase tracking-[0.12em] text-stone-600">
                   {video.contentKind.replaceAll("-", " ")}
                 </p>
                 <h4 className="mt-2 text-lg font-semibold tracking-[-0.025em] text-stone-950">
                   {video.role}
                 </h4>
                 <dl className="mt-5 grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 text-sm">
-                  <dt className="text-stone-500">You chose</dt>
+                  <dt className="text-stone-600">You chose</dt>
                   <dd className="font-medium text-stone-900">{action?.label}</dd>
-                  <dt className="text-stone-500">Signal</dt>
+                  <dt className="text-stone-600">Signal</dt>
                   <dd className="font-medium capitalize text-stone-900">
                     {decision?.signalType}
                   </dd>
-                  <dt className="text-stone-500">Drift</dt>
+                  <dt className="text-stone-600">Drift</dt>
                   <dd className="font-mono text-stone-900">
                     {decision && decision.feedDriftDelta > 0 ? "+" : ""}
                     {decision?.feedDriftDelta}
