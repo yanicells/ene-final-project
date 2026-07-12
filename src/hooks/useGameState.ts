@@ -1,6 +1,6 @@
 "use client";
 
-import { useReducer } from "react";
+import { useCallback, useReducer } from "react";
 import { feedVideos } from "@/data/videos";
 import { applyFeedAction } from "@/lib/scoring";
 import type {
@@ -95,17 +95,37 @@ function gameReducer(state: GameState, action: GameAction): GameState {
 
 export function useGameState() {
   const [state, dispatch] = useReducer(gameReducer, initialGameState);
+  const answerRecognition = useCallback(
+    (videoId: string, answer: RecognitionAnswer) =>
+      dispatch({ type: "answer-recognition", videoId, answer }),
+    [],
+  );
+  const recordDecision = useCallback(
+    (videoId: string, action: FeedAction) =>
+      dispatch({ type: "record-decision", videoId, action }),
+    [],
+  );
+  const advanceVideo = useCallback(
+    () => dispatch({ type: "advance-video" }),
+    [],
+  );
+  const toggleFeedControl = useCallback(
+    (controlId: string) => dispatch({ type: "toggle-feed-control", controlId }),
+    [],
+  );
+  const completeGame = useCallback(
+    () => dispatch({ type: "complete-game" }),
+    [],
+  );
+  const resetGame = useCallback(() => dispatch({ type: "reset" }), []);
 
   return {
     state,
-    answerRecognition: (videoId: string, answer: RecognitionAnswer) =>
-      dispatch({ type: "answer-recognition", videoId, answer }),
-    recordDecision: (videoId: string, action: FeedAction) =>
-      dispatch({ type: "record-decision", videoId, action }),
-    advanceVideo: () => dispatch({ type: "advance-video" }),
-    toggleFeedControl: (controlId: string) =>
-      dispatch({ type: "toggle-feed-control", controlId }),
-    completeGame: () => dispatch({ type: "complete-game" }),
-    resetGame: () => dispatch({ type: "reset" }),
+    answerRecognition,
+    recordDecision,
+    advanceVideo,
+    toggleFeedControl,
+    completeGame,
+    resetGame,
   };
 }

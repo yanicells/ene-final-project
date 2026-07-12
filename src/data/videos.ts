@@ -13,6 +13,8 @@ export const feedVideos: readonly FeedVideo[] = [
     durationSeconds: 17,
     decisionAtSeconds: 8,
     caption: "resetting my desk before I try to focus again",
+    transcript:
+      "A warm desk setup comes into view after a quick reset. The post focuses on the routine and atmosphere rather than a product.",
     placeholderNote: "Replace with 01-organic-interest.mp4, 1080 x 1920, 15 to 18 seconds.",
     accent: "#74a889",
     actions: [
@@ -55,6 +57,8 @@ export const feedVideos: readonly FeedVideo[] = [
     decisionAtSeconds: 9,
     disclosure: "Bought with my own money",
     caption: "what I liked, what annoyed me, and whether I would buy it again",
+    transcript:
+      "The creator shows an adjustable desk lamp and explains one useful feature, one drawback, and that they purchased it themselves.",
     placeholderNote: "Replace with 02-unsponsored-review.mp4, 1080 x 1920, 18 to 20 seconds.",
     accent: "#8b91a0",
     actions: [
@@ -97,6 +101,8 @@ export const feedVideos: readonly FeedVideo[] = [
     decisionAtSeconds: 9,
     disclosure: "Paid partnership with Luma",
     caption: "my late-night study reset with Luma",
+    transcript:
+      "A student works beside a warm desk lamp during a polished late-night routine. A paid partnership disclosure identifies the brand relationship.",
     placeholderNote: "Replace with 03-sponsored-lifestyle.mp4, 1080 x 1920, 18 to 22 seconds.",
     accent: "#d99b4d",
     recognitionPrompt: {
@@ -144,6 +150,8 @@ export const feedVideos: readonly FeedVideo[] = [
     decisionAtSeconds: 10,
     disclosure: "links and code in bio #affiliate",
     caption: "3 desk upgrades I would buy again",
+    transcript:
+      "A creator films a desk setup and recommends three upgrades. The featured lamp appears with a link, discount code, and brief affiliate label.",
     placeholderNote: "Replace with 04-affiliate-recommendation.mp4, 1080 x 1920, 18 to 22 seconds.",
     accent: "#be7aa5",
     recognitionPrompt: {
@@ -191,6 +199,8 @@ export const feedVideos: readonly FeedVideo[] = [
     decisionAtSeconds: 8,
     disclosure: "Advertisement",
     caption: "limited-time offer this week",
+    transcript:
+      "A bright studio image presents the Luma Arc as a product advertisement with a limited-time offer and direct invitation to open the product.",
     placeholderNote: "Replace with 05-brand-ad.mp4, 1080 x 1920, 15 to 18 seconds.",
     accent: "#e2c83b",
     actions: [
@@ -237,6 +247,8 @@ export const feedVideos: readonly FeedVideo[] = [
     decisionAtSeconds: 9,
     disclosure: "Simulated shop livestream",
     caption: "live demo. voucher available during this stream",
+    transcript:
+      "A livestream-style post invites the viewer to inspect a voucher while a person uses a phone beside a colorful desk setup.",
     placeholderNote: "Replace with 06-shop-urgency.mp4, 1080 x 1920, 18 to 22 seconds.",
     accent: "#dd7063",
     actions: [

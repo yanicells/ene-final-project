@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import { Pause, Play } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import type { ReactNode } from "react";
+import { useRef, useState, type ReactNode } from "react";
 import type { FeedVideo } from "@/types/experience";
 
 interface PhoneFrameProps {
@@ -19,9 +20,24 @@ export function PhoneFrame({
   overlay,
 }: PhoneFrameProps) {
   const reduceMotion = useReducedMotion();
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [mediaFailed, setMediaFailed] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(Boolean(video.videoSrc));
+  const showVideo = Boolean(video.videoSrc && !mediaFailed);
+
+  const togglePlayback = () => {
+    const media = videoRef.current;
+    if (!media) return;
+
+    if (media.paused) {
+      void media.play();
+    } else {
+      media.pause();
+    }
+  };
 
   return (
-    <div className="phone-shell relative mx-auto w-full max-w-[20rem]">
+    <div className="phone-shell relative mx-auto w-full max-w-[18.5rem] lg:max-w-[16.5rem] min-[1200px]:max-w-[18.5rem] min-[1400px]:max-w-[20rem]">
       <div className="phone-hardware relative overflow-hidden rounded-[3.15rem] border-[0.48rem] border-[#1b1b1a] bg-[#151514] shadow-[0_30px_80px_rgba(34,31,24,0.24),0_3px_12px_rgba(34,31,24,0.18)]">
         <div className="absolute left-1/2 top-2 z-30 h-6 w-[5.6rem] -translate-x-1/2 rounded-full bg-[#111110] shadow-[inset_0_-1px_0_rgba(255,255,255,0.08)]" />
 
@@ -35,14 +51,31 @@ export function PhoneFrame({
               exit={reduceMotion ? undefined : { opacity: 0, scale: 0.985 }}
               transition={{ duration: reduceMotion ? 0 : 0.45 }}
             >
-              <Image
-                src={video.posterSrc}
-                alt={video.posterAlt}
-                fill
-                priority={videoIndex === 0}
-                sizes="(max-width: 768px) 88vw, 352px"
-                className="object-cover"
-              />
+              {showVideo ? (
+                <video
+                  ref={videoRef}
+                  src={video.videoSrc}
+                  poster={video.posterSrc}
+                  aria-label={video.posterAlt}
+                  autoPlay
+                  muted
+                  playsInline
+                  preload={videoIndex === 0 ? "auto" : "metadata"}
+                  onError={() => setMediaFailed(true)}
+                  onPlay={() => setIsPlaying(true)}
+                  onPause={() => setIsPlaying(false)}
+                  className="size-full object-cover"
+                />
+              ) : (
+                <Image
+                  src={video.posterSrc}
+                  alt={video.posterAlt}
+                  fill
+                  priority={videoIndex === 0}
+                  sizes="(max-width: 768px) 88vw, 352px"
+                  className="object-cover"
+                />
+              )}
               <motion.div
                 className="absolute inset-0 bg-[linear-gradient(180deg,rgba(16,16,14,0.08)_0%,rgba(16,16,14,0.02)_42%,rgba(16,16,14,0.82)_100%)]"
                 animate={reduceMotion ? undefined : { opacity: [0.86, 1, 0.86] }}
@@ -69,9 +102,24 @@ export function PhoneFrame({
             ))}
           </div>
 
+          {showVideo ? (
+            <button
+              type="button"
+              onClick={togglePlayback}
+              aria-label={isPlaying ? "Pause video" : "Play video"}
+              className="absolute left-4 top-16 z-30 grid size-9 place-items-center rounded-full border border-white/15 bg-black/35 text-white backdrop-blur-md transition hover:bg-black/55 active:scale-[0.96]"
+            >
+              {isPlaying ? (
+                <Pause aria-hidden="true" size={14} fill="currentColor" />
+              ) : (
+                <Play aria-hidden="true" size={14} fill="currentColor" />
+              )}
+            </button>
+          ) : null}
+
           <div className="absolute inset-x-4 bottom-5 z-20 text-white">
             <p className="mb-2 inline-flex rounded-full bg-black/35 px-2.5 py-1 font-mono text-[0.58rem] uppercase tracking-[0.12em] backdrop-blur-md">
-              Production still
+              {showVideo ? "Production video" : "Production still"}
             </p>
             <p className="text-[0.72rem] font-semibold text-white/90">
               {video.creator}

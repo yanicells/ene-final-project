@@ -57,10 +57,7 @@ export function AgencyBeyondControls() {
       <div className="mx-auto max-w-[1480px]">
         <div className="grid gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:items-start lg:gap-20">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.14em] text-stone-500">
-              Agency beyond controls
-            </p>
-            <h2 className="mt-5 text-5xl font-semibold leading-[0.94] tracking-[-0.06em] text-stone-950 md:text-7xl">
+            <h2 className="text-5xl font-semibold leading-[0.94] tracking-[-0.06em] text-stone-950 md:text-7xl">
               Add friction before the next action.
             </h2>
             <p className="mt-7 max-w-xl text-lg leading-8 text-stone-600">

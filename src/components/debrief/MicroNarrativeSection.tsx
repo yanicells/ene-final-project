@@ -15,10 +15,7 @@ export function MicroNarrativeSection() {
     <section className="debrief-section px-5 py-24 md:px-8 md:py-36">
       <div className="mx-auto grid max-w-[1480px] gap-16 lg:grid-cols-[0.82fr_1.18fr] lg:gap-24">
         <MotionReveal className="lg:sticky lg:top-28 lg:self-start">
-          <p className="font-mono text-xs uppercase tracking-[0.14em] text-stone-500">
-            The micro narrative
-          </p>
-          <h2 className="mt-5 text-5xl font-semibold leading-[0.94] tracking-[-0.06em] text-stone-950 md:text-7xl">
+          <h2 className="text-5xl font-semibold leading-[0.94] tracking-[-0.06em] text-stone-950 md:text-7xl">
             Resistance is a pattern, not one heroic click.
           </h2>
           <p className="mt-7 max-w-xl text-lg leading-8 text-stone-600">

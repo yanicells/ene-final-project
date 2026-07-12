@@ -50,6 +50,7 @@ export interface FeedVideo {
   decisionAtSeconds: number;
   disclosure?: string;
   caption: string;
+  transcript: string;
   placeholderNote: string;
   accent: string;
   recognitionPrompt?: RecognitionPrompt;

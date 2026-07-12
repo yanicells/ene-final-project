@@ -31,10 +31,7 @@ export function ResultsOverview({ state, onReset }: ResultsOverviewProps) {
     >
       <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
         <div>
-          <p className="font-mono text-xs uppercase tracking-[0.14em] text-stone-500">
-            Your result
-          </p>
-          <h2 className="mt-4 max-w-3xl text-5xl font-semibold leading-[0.95] tracking-[-0.055em] text-stone-950 md:text-7xl">
+          <h2 className="max-w-3xl text-5xl font-semibold leading-[0.95] tracking-[-0.055em] text-stone-950 md:text-7xl">
             You shaped the feed. It shaped the choices in front of you.
           </h2>
         </div>

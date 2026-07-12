@@ -17,10 +17,7 @@ export function SystemicResponsibility() {
       <div className="mx-auto max-w-[1480px]">
         <MotionReveal className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr]">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.14em] text-stone-500">
-              Systemic responsibility
-            </p>
-            <h2 className="mt-5 text-5xl font-semibold leading-[0.94] tracking-[-0.06em] text-stone-950 md:text-7xl">
+            <h2 className="text-5xl font-semibold leading-[0.94] tracking-[-0.06em] text-stone-950 md:text-7xl">
               Agency is also a design decision.
             </h2>
           </div>

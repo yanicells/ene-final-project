@@ -20,10 +20,7 @@ export function ReferencesSection() {
       <div className="mx-auto max-w-[1480px]">
         <div className="grid gap-10 lg:grid-cols-[0.68fr_1.32fr]">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.14em] text-stone-500">
-              APA 7 reference list
-            </p>
-            <h2 className="mt-5 text-5xl font-semibold tracking-[-0.055em] text-stone-950 md:text-6xl">
+            <h2 className="text-5xl font-semibold tracking-[-0.055em] text-stone-950 md:text-6xl">
               Sources
             </h2>
             <p className="mt-6 max-w-sm text-sm leading-6 text-stone-600">

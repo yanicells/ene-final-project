@@ -75,6 +75,13 @@ export function DecisionPanel({
         {decision ? "Signal recorded" : "What do you do?"}
       </h3>
 
+      <details className="mt-4 text-xs leading-5 text-stone-500">
+        <summary className="w-fit cursor-pointer font-semibold text-stone-600 transition hover:text-stone-950">
+          Read media transcript
+        </summary>
+        <p className="mt-2 max-w-sm">{video.transcript}</p>
+      </details>
+
       {video.recognitionPrompt ? (
         <fieldset className="mt-7 border-0 p-0">
           <legend className="text-sm font-medium leading-6 text-stone-700">

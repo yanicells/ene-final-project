@@ -9,7 +9,7 @@ export function ProgressNav() {
           For You, For Profit
         </a>
         <nav aria-label="Experience chapters">
-          <ul className="flex items-center gap-1 text-xs font-medium text-stone-500 sm:gap-4">
+          <ul className="flex items-center gap-3 text-xs font-medium text-stone-500 sm:gap-4">
             <li className="hidden sm:block">
               <a className="transition hover:text-stone-950" href="#opening">
                 How it changed

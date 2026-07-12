@@ -15,10 +15,7 @@ export function NarrativePrimer() {
     <section id="concepts" className="px-5 py-24 md:px-8 md:py-36">
       <div className="mx-auto max-w-[1480px]">
         <MotionReveal className="max-w-3xl">
-          <p className="font-mono text-xs uppercase tracking-[0.14em] text-stone-500">
-            Two stories at once
-          </p>
-          <h2 className="mt-5 text-5xl font-semibold leading-[0.95] tracking-[-0.055em] text-stone-950 md:text-7xl">
+          <h2 className="text-5xl font-semibold leading-[0.95] tracking-[-0.055em] text-stone-950 md:text-7xl">
             The feed builds one story. Your choices can build another.
           </h2>
         </MotionReveal>

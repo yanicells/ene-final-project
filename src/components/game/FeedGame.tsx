@@ -96,7 +96,7 @@ export function FeedGame() {
   return (
     <section
       id="game"
-      className="game-section scroll-mt-16 border-y border-stone-300 bg-[#eceae4] px-4 py-12 md:px-6 xl:min-h-[calc(100dvh-3.5rem)] xl:py-8"
+      className="game-section scroll-mt-16 border-y border-stone-300 bg-[#eceae4] px-4 py-12 md:px-6 lg:min-h-[calc(100dvh-4rem)] lg:py-5"
     >
       <div className="mx-auto max-w-[1480px]">
         <div className="mb-5 flex items-end justify-between gap-5 px-1">
@@ -116,12 +116,12 @@ export function FeedGame() {
         <AnimatePresence mode="wait">
           <motion.div
             key={currentVideo.id}
-            className="game-layout grid gap-7 xl:grid-cols-[minmax(14rem,0.72fr)_minmax(19rem,22rem)_minmax(22rem,1.1fr)] xl:items-stretch"
+            className="game-layout grid gap-7 lg:grid-cols-[minmax(14rem,0.72fr)_minmax(17rem,22rem)_minmax(21rem,1.1fr)] lg:items-stretch"
             initial={reduceMotion ? false : { opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={reduceMotion ? undefined : { opacity: 0 }}
           >
-            <div className="order-2 rounded-[1.7rem] border border-stone-300 bg-[#f4f3ef] p-5 xl:order-1 xl:p-6">
+            <div className="order-2 rounded-[1.7rem] border border-stone-300 bg-[#f4f3ef] p-5 lg:order-1 xl:p-6">
               <DecisionPanel
                 video={currentVideo}
                 decision={decision}
@@ -135,8 +135,9 @@ export function FeedGame() {
               />
             </div>
 
-            <div className="order-1 flex items-center justify-center xl:order-2">
+            <div className="order-1 flex items-center justify-center lg:order-2">
               <PhoneFrame
+                key={currentVideo.id}
                 video={currentVideo}
                 videoIndex={state.currentVideoIndex}
                 totalVideos={feedVideos.length}
@@ -144,7 +145,7 @@ export function FeedGame() {
               />
             </div>
 
-            <div className="order-3 xl:order-3">
+            <div className="order-3 lg:order-3">
               <LiveDataPanel
                 feedDrift={state.feedDrift}
                 decisions={state.decisions}

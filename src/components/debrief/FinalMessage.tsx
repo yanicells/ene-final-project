@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowRight, RotateCcw } from "lucide-react";
 import { MotionReveal } from "@/components/shared/MotionReveal";
 
@@ -19,13 +21,14 @@ export function FinalMessage() {
             react.
           </p>
           <div className="flex shrink-0 flex-wrap gap-3">
-            <a
-              href="#game"
+            <button
+              type="button"
+              onClick={() => window.location.assign("/#game")}
               className="flex items-center gap-2 rounded-full border border-stone-400 px-4 py-2.5 text-sm font-semibold text-stone-700 transition hover:border-stone-950 hover:text-stone-950"
             >
               <RotateCcw aria-hidden="true" size={15} />
               Replay
-            </a>
+            </button>
             <a
               href="#sources"
               className="flex items-center gap-2 rounded-full bg-stone-950 px-4 py-2.5 text-sm font-semibold text-[#f4f3ef] transition hover:bg-stone-800"
