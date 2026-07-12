@@ -14,6 +14,7 @@
 - Use only the Vercel React Best Practices and design-taste-frontend skills unless the user explicitly changes the allowed skill set.
 - Apply the Vercel React Best Practices skill when writing, reviewing, or refactoring React and Next.js code.
 - Use the [$design-taste-frontend](/Users/yanicells/Documents/dev/admu-files/ene-final-proj/.agents/skills/design-taste-frontend/SKILL.md) skill when reviewing or refactoring UI components and layouts.
+- Use Motion for React through `motion/react` for purposeful animation, interaction feedback, and state transitions. Keep Motion code in focused Client Component leaves, animate transforms and opacity where possible, and provide reduced-motion behavior.
 - Prefer Server Components. Add `"use client"` only where interaction or browser APIs require it.
 
 ## Project structure
