@@ -32,6 +32,9 @@
 - Maintain one dominant focal point per beat. Use hierarchy, progressive disclosure, motion, and directional cues to guide attention without showing every explanation at once.
 - For the opening cutscene, keep the phone centered and let short narration or subtitle-like text appear around it as the feed changes.
 - During the game, keep the phone feed as the main focus. Place controls close to the phone and use supporting areas for the feed-drift meter, signals collected from the user's behavior, and short research-based guidance that updates after decisions.
+- Make the phone feel like a real device rather than a generic rounded rectangle. Include believable hardware framing, screen proportions, safe areas, and mobile-scale spacing without letting decorative device chrome overpower the content.
+- Make the simulated feed immediately recognizable as a TikTok-style short-video interface: full-screen vertical media, creator and caption information near the bottom, a right-side action rail, visible playback progress, and familiar feed navigation and disclosure placement.
+- Preserve the interaction conventions users need to understand the simulation, but use original icons, labels, colors, and branding rather than making a pixel-for-pixel TikTok replica.
 - Supporting panels should feel responsive to the user's actions, not like static marketing feature cards.
 - Treat feed drift as a neutral explanatory metaphor, not a health bar, morality score, or win-versus-capitalism mechanic. The experience should reveal influence without declaring that the user won or failed.
 - Preserve the same visual path on smaller screens through a clear linear order and progressive disclosure rather than squeezing the full desktop dashboard into one view.
