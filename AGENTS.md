@@ -11,6 +11,7 @@
 
 - Use `pnpm` exclusively. Do not use npm or Yarn.
 - Follow the stack and constraints in `ene-mt2-website-handoff.md`.
+- Use only the Vercel React Best Practices and design-taste-frontend skills unless the user explicitly changes the allowed skill set.
 - Apply the Vercel React Best Practices skill when writing, reviewing, or refactoring React and Next.js code.
 - Use the [$design-taste-frontend](/Users/yanicells/Documents/dev/admu-files/ene-final-proj/.agents/skills/design-taste-frontend/SKILL.md) skill when reviewing or refactoring UI components and layouts.
 - Prefer Server Components. Add `"use client"` only where interaction or browser APIs require it.
@@ -45,9 +46,10 @@
 
 - Treat `ene-mt2-content-argument-draft.md` as the content and research source of truth.
 - Use `ene-mt2-direct-website-flow.md` as the concise experience map and `ene-mt2-website-handoff.md` as the implementation specification.
-- Use the Humanizer skill whenever drafting or revising user-facing website content. Preserve the author's argument, factual meaning, citations, and careful research qualifications while making the copy sound natural.
+- Preserve the author's argument, factual meaning, citations, and careful research qualifications while making website copy concise and natural.
 - Do not invent statistics, sources, findings, or claims. Keep APA 7 citations and label preprints accurately.
 - Do not imply that the simulation reproduces TikTok's actual algorithm or blame users for ordinary attention and desire.
+- The simulation may use immersive wording such as `Data collected about you` after it has clearly disclosed that the experience is a research-informed simulation. Keep the simulation framing available without weakening the immediacy of the interface.
 
 ## Visual assets
 
@@ -59,4 +61,6 @@
 
 - Run the relevant focused checks throughout implementation.
 - Before handing off a complete scope, run the available `pnpm` lint, typecheck, test, and build commands that apply.
+- Treat desktop as the primary presentation. Design and visually verify the experience at common laptop and desktop sizes before adapting it for smaller screens.
+- Use the in-app browser or Computer Use during implementation to inspect the rendered experience, complete the full interaction path, and catch visual, focus, overflow, and motion problems that source review alone cannot reveal.
 - Check keyboard navigation, reduced motion, responsive layouts, and fallback content as the relevant UI is implemented.
