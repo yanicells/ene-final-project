@@ -140,6 +140,7 @@ export function OpeningSequence() {
                   src="/images/feed/desk-setup.jpg"
                   alt="A desk setup inside a simulated phone feed."
                   fill
+                  priority
                   sizes="340px"
                   className="object-cover"
                 />
