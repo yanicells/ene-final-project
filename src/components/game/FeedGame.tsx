@@ -96,10 +96,10 @@ export function FeedGame() {
   return (
     <section
       id="game"
-      className="game-section scroll-mt-16 border-y border-stone-300 bg-[#eceae4] px-4 py-12 md:px-6 xl:min-h-[100dvh] xl:py-16"
+      className="game-section scroll-mt-16 border-y border-stone-300 bg-[#eceae4] px-4 py-12 md:px-6 xl:min-h-[calc(100dvh-3.5rem)] xl:py-8"
     >
       <div className="mx-auto max-w-[1480px]">
-        <div className="mb-7 flex items-end justify-between gap-5 px-1">
+        <div className="mb-5 flex items-end justify-between gap-5 px-1">
           <div>
             <p className="font-mono text-[0.65rem] uppercase tracking-[0.14em] text-stone-500">
               Guided feed simulation

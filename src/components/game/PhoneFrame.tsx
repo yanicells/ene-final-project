@@ -21,7 +21,7 @@ export function PhoneFrame({
   const reduceMotion = useReducedMotion();
 
   return (
-    <div className="phone-shell relative mx-auto w-full max-w-[22rem]">
+    <div className="phone-shell relative mx-auto w-full max-w-[20rem]">
       <div className="phone-hardware relative overflow-hidden rounded-[3.15rem] border-[0.48rem] border-[#1b1b1a] bg-[#151514] shadow-[0_30px_80px_rgba(34,31,24,0.24),0_3px_12px_rgba(34,31,24,0.18)]">
         <div className="absolute left-1/2 top-2 z-30 h-6 w-[5.6rem] -translate-x-1/2 rounded-full bg-[#111110] shadow-[inset_0_-1px_0_rgba(255,255,255,0.08)]" />
 

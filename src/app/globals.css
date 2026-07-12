@@ -3,6 +3,7 @@
 :root {
   --background: #f4f3ef;
   --foreground: #171714;
+  --accent: #f1cf4f;
 }
 
 * {
@@ -18,6 +19,7 @@ html {
 body {
   min-height: 100dvh;
   margin: 0;
+  overflow-x: hidden;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), sans-serif;
@@ -29,12 +31,39 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+button,
+a {
+  outline-offset: 4px;
+}
+
+:focus-visible {
+  outline: 2px solid #171714;
+  outline-offset: 4px;
+}
+
+.text-stone-650 {
+  color: #57534d;
+}
+
+.phone-shell {
+  filter: drop-shadow(0 8px 2px rgb(23 23 20 / 0.04));
+}
+
 ::selection {
   background: #f1cf4f;
   color: #171714;
 }
 
 @media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
   html {
     scroll-behavior: auto;
   }
