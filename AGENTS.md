@@ -12,6 +12,7 @@
 - Use `pnpm` exclusively. Do not use npm or Yarn.
 - Follow the stack and constraints in `ene-mt2-website-handoff.md`.
 - Apply the Vercel React Best Practices skill when writing, reviewing, or refactoring React and Next.js code.
+- Use the [$design-taste-frontend](/Users/yanicells/Documents/dev/admu-files/ene-final-proj/.agents/skills/design-taste-frontend/SKILL.md) skill when reviewing or refactoring UI components and layouts.
 - Prefer Server Components. Add `"use client"` only where interaction or browser APIs require it.
 
 ## Project structure
