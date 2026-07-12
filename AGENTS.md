@@ -24,6 +24,18 @@
 - Keep static content, game data, research sources, scoring logic, and UI components separate.
 - Import modules directly rather than adding broad barrel files.
 
+## Design and UX direction
+
+- Do not design this as a marketing website or a sequence of promotional landing-page sections. Treat it as an immersive, guided interactive explainer.
+- Give the experience an infographic-like quality: use animated sequences, connected annotations, signal tokens, meters, and diagrams to make the research visible instead of relying on card grids and long text blocks.
+- Keep the user engaged through a clear path. At every moment, make the primary subject, the next place to look, and the next available action obvious.
+- Maintain one dominant focal point per beat. Use hierarchy, progressive disclosure, motion, and directional cues to guide attention without showing every explanation at once.
+- For the opening cutscene, keep the phone centered and let short narration or subtitle-like text appear around it as the feed changes.
+- During the game, keep the phone feed as the main focus. Place controls close to the phone and use supporting areas for the feed-drift meter, signals collected from the user's behavior, and short research-based guidance that updates after decisions.
+- Supporting panels should feel responsive to the user's actions, not like static marketing feature cards.
+- Treat feed drift as a neutral explanatory metaphor, not a health bar, morality score, or win-versus-capitalism mechanic. The experience should reveal influence without declaring that the user won or failed.
+- Preserve the same visual path on smaller screens through a clear linear order and progressive disclosure rather than squeezing the full desktop dashboard into one view.
+
 ## Content and research
 
 - Treat `ene-mt2-content-argument-draft.md` as the content and research source of truth.
