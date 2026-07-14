@@ -81,9 +81,9 @@ export function OpeningSequence() {
   const overlayOpacity = useTransform(scrollYProgress, [0.48, 0.94], [0, 0.72]);
 
   useMotionValueEvent(scrollYProgress, "change", (progress) => {
-    if (progress >= 0.46 && !endingVisible) {
+    if (progress >= 0.68 && !endingVisible) {
       setEndingVisible(true);
-    } else if (progress < 0.08 && endingVisible) {
+    } else if (progress < 0.14 && endingVisible) {
       setEndingVisible(false);
     }
   });
@@ -92,7 +92,7 @@ export function OpeningSequence() {
     <section
       ref={sectionRef}
       id="opening"
-      className="relative min-h-[220dvh] scroll-mt-14 border-t border-stone-300 bg-[#eceae4]"
+      className="relative min-h-[260dvh] scroll-mt-14 border-t border-stone-300 bg-[#eceae4]"
     >
       <div className="sticky top-14 flex min-h-[calc(100dvh-3.5rem)] items-center overflow-hidden px-5 py-10 md:px-8">
         <div className="relative mx-auto grid w-full max-w-[1480px] gap-4 lg:block lg:min-h-[calc(100dvh-8rem)]">
@@ -125,12 +125,12 @@ export function OpeningSequence() {
               className="relative overflow-hidden rounded-[3rem] border-[0.45rem] border-[#1b1b1a] bg-[#1b1b1a] shadow-[0_35px_90px_rgba(30,27,20,0.25)]"
               initial={false}
               animate={{
-                scale: endingVisible ? 0.56 : 1,
-                y: endingVisible ? 178 : 0,
-                opacity: endingVisible ? 0.82 : 1,
+                scale: endingVisible ? 0.62 : 1,
+                y: endingVisible ? 184 : 0,
+                opacity: endingVisible ? 0.86 : 1,
               }}
               transition={{
-                duration: reduceMotion ? 0 : 0.5,
+                duration: reduceMotion ? 0 : 1.05,
                 ease: [0.22, 1, 0.36, 1],
               }}
             >
@@ -167,7 +167,11 @@ export function OpeningSequence() {
               opacity: endingVisible ? 1 : 0,
               y: endingVisible ? 0 : 24,
             }}
-            transition={{ duration: reduceMotion ? 0 : 0.35 }}
+            transition={{
+              delay: endingVisible && !reduceMotion ? 0.22 : 0,
+              duration: reduceMotion ? 0 : 0.62,
+              ease: [0.22, 1, 0.36, 1],
+            }}
           >
             <p className="text-3xl font-semibold leading-[1] tracking-[-0.05em] text-stone-950 lg:text-5xl">
               Then your feed stopped feeling like yours.
