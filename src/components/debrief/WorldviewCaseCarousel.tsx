@@ -32,38 +32,9 @@ export function WorldviewCaseCarousel() {
       role="region"
       aria-roledescription="carousel"
       aria-label="Cases showing how feeds can shape worldviews"
-      className="relative min-h-[39rem] overflow-hidden rounded-[1.8rem] border border-stone-300 bg-[#e5e2da] p-5 md:p-7"
+      className="relative min-h-[34rem]"
     >
-      <div className="relative z-40 flex items-center justify-between">
-        <div>
-          <p className="font-mono text-[0.65rem] uppercase tracking-[0.14em] text-stone-600">
-            Case {String(activeIndex + 1).padStart(2, "0")} / 05
-          </p>
-          <p className="mt-1 text-sm font-semibold text-stone-800">
-            Move through the evidence
-          </p>
-        </div>
-        <div className="flex gap-2">
-          <button
-            type="button"
-            onClick={() => move(-1)}
-            aria-label="Previous case"
-            className="grid size-11 place-items-center rounded-full border border-stone-400 bg-[#f8f7f3] transition hover:-translate-x-0.5 hover:border-stone-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-950"
-          >
-            <ArrowLeft aria-hidden="true" size={18} />
-          </button>
-          <button
-            type="button"
-            onClick={() => move(1)}
-            aria-label="Next case"
-            className="grid size-11 place-items-center rounded-full bg-stone-950 text-white transition hover:translate-x-0.5 hover:bg-stone-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-950"
-          >
-            <ArrowRight aria-hidden="true" size={18} />
-          </button>
-        </div>
-      </div>
-
-      <div className="absolute inset-x-0 bottom-5 top-24 md:bottom-7">
+      <div className="absolute inset-0 overflow-hidden">
         {worldviewCases.map((item, index) => {
           const position = getRelativePosition(index, activeIndex);
           const isVisible = Math.abs(position) <= 1;
@@ -86,7 +57,7 @@ export function WorldviewCaseCarousel() {
                 duration: reduceMotion ? 0 : 0.55,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className={`absolute bottom-0 left-1/2 flex h-[30rem] w-[78%] -translate-x-1/2 flex-col overflow-hidden rounded-[1.5rem] border border-stone-300 bg-[#f8f7f3] shadow-[0_24px_55px_rgba(35,31,24,0.16)] md:h-[31.5rem] ${isActive ? "pointer-events-auto" : "pointer-events-none"}`}
+              className={`absolute bottom-0 left-1/2 flex h-[33rem] w-[78%] -translate-x-1/2 flex-col overflow-hidden rounded-[1.5rem] border border-stone-300 bg-[#f8f7f3] shadow-[0_18px_42px_rgba(35,31,24,0.14)] ${isActive ? "pointer-events-auto" : "pointer-events-none"}`}
             >
               <div className="relative h-[44%] shrink-0 overflow-hidden">
                 <Image
@@ -130,8 +101,25 @@ export function WorldviewCaseCarousel() {
         })}
       </div>
 
+      <button
+        type="button"
+        onClick={() => move(-1)}
+        aria-label="Previous case"
+        className="absolute left-0 top-1/2 z-40 grid size-11 -translate-y-1/2 place-items-center rounded-full border border-stone-400 bg-[#f8f7f3] shadow-sm transition hover:-translate-x-0.5 hover:-translate-y-1/2 hover:border-stone-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-950"
+      >
+        <ArrowLeft aria-hidden="true" size={18} />
+      </button>
+      <button
+        type="button"
+        onClick={() => move(1)}
+        aria-label="Next case"
+        className="absolute right-0 top-1/2 z-40 grid size-11 -translate-y-1/2 place-items-center rounded-full bg-stone-950 text-white shadow-sm transition hover:translate-x-0.5 hover:-translate-y-1/2 hover:bg-stone-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-950"
+      >
+        <ArrowRight aria-hidden="true" size={18} />
+      </button>
+
       <p className="sr-only" aria-live="polite">
-        Showing {activeCase.title}, case {activeIndex + 1} of {worldviewCases.length}
+        Showing {activeCase.title}, {activeIndex + 1} of {worldviewCases.length}
       </p>
     </div>
   );
