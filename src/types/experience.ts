@@ -82,10 +82,12 @@ export interface GameState {
   completed: boolean;
 }
 
+export type CitationSegment = string | { italic: string };
+
 export interface ResearchSource {
   id: string;
   shortCitation: string;
-  apa: string;
+  apa: readonly CitationSegment[];
   url: string;
   sourceType: "journal" | "conference" | "preprint" | "official";
   usedIn: readonly string[];

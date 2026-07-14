@@ -71,7 +71,16 @@ describe("experience content", () => {
 
     for (const source of researchSources) {
       expect(source.url).toMatch(/^https:\/\//);
-      expect(source.apa.length).toBeGreaterThan(50);
+
+      const apaText = source.apa
+        .map((segment) =>
+          typeof segment === "string" ? segment : segment.italic,
+        )
+        .join("");
+      expect(apaText.length).toBeGreaterThan(50);
+      expect(
+        source.apa.some((segment) => typeof segment !== "string"),
+      ).toBe(true);
     }
   });
 });

@@ -49,21 +49,26 @@ export function ReferencesSection() {
                         id={`source-${source.id}`}
                         className="scroll-mt-20 border-b border-stone-300 py-5"
                       >
-                        <p className="text-sm leading-6 text-stone-700">
-                          {source.apa}
+                        <p className="-indent-6 pl-6 text-sm leading-6 text-stone-700">
+                          {source.apa.map((segment, index) =>
+                            typeof segment === "string" ? (
+                              segment
+                            ) : (
+                              <em key={index}>{segment.italic}</em>
+                            ),
+                          )}{" "}
+                          <a
+                            href={source.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="break-all underline decoration-stone-300 underline-offset-4 transition hover:text-stone-950"
+                          >
+                            {source.url}
+                          </a>
                         </p>
-                        <p className="mt-3 text-xs leading-5 text-stone-600">
+                        <p className="mt-3 pl-6 text-xs leading-5 text-stone-600">
                           {source.note}
                         </p>
-                        <a
-                          href={source.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-stone-700 underline decoration-stone-300 underline-offset-4 transition hover:text-stone-950"
-                        >
-                          Open source
-                          <ExternalLink aria-hidden="true" size={12} />
-                        </a>
                       </article>
                     ))}
                   </div>
