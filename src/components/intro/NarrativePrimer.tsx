@@ -1,11 +1,14 @@
 import { ArrowRight } from "lucide-react";
+import { SimulationLaunch } from "@/components/intro/SimulationLaunch";
 import { MotionReveal } from "@/components/shared/MotionReveal";
 
 const narrativeSteps = [
   "Interest",
+  "Discovery",
   "Review",
   "Lifestyle",
   "Recommendation",
+  "Repetition",
   "Urgency",
   "Purchase",
 ];
@@ -80,23 +83,8 @@ export function NarrativePrimer() {
           </div>
         </MotionReveal>
 
-        <MotionReveal className="mt-12 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
-          <div>
-            <h3 className="text-2xl font-semibold tracking-[-0.04em] text-stone-950">
-              Go through six fixed posts.
-            </h3>
-            <p className="mt-2 max-w-xl text-sm leading-6 text-stone-600">
-              Decide what deserves your attention. Your choices affect the
-              simulation, but there is no perfect score.
-            </p>
-          </div>
-          <a
-            href="#game"
-            className="flex items-center gap-3 rounded-full bg-stone-950 px-5 py-3 text-sm font-semibold text-[#f4f3ef] transition hover:bg-stone-800 active:scale-[0.98]"
-          >
-            Take back the feed
-            <ArrowRight aria-hidden="true" size={17} strokeWidth={1.8} />
-          </a>
+        <MotionReveal className="mt-12">
+          <SimulationLaunch />
         </MotionReveal>
       </div>
     </section>

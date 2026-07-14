@@ -22,7 +22,7 @@ pnpm build
 
 ## Replacing the feed media
 
-The six current poster images live in `public/images/feed`. Each entry in `src/data/videos.ts` includes the intended filename, duration, and framing in `placeholderNote`.
+The eight current poster images live in `public/images/feed`. Each entry in `src/data/videos.ts` includes the intended filename, duration, and framing in `placeholderNote`.
 
 To use a final video, place it in `public/videos/feed` and add its public path as `videoSrc` on the matching feed entry. The phone player uses muted inline autoplay, custom play and pause controls, a poster fallback, and a written transcript.
 

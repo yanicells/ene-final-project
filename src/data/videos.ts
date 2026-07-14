@@ -45,6 +45,50 @@ export const feedVideos: readonly FeedVideo[] = [
     citationIds: ["boeker-2022"],
   },
   {
+    id: "aesthetic-discovery",
+    sequenceLabel: "Discovery",
+    role: "The aesthetic detour",
+    title: "The warm-light corner I keep saving",
+    creator: "@corners.afterclass",
+    contentKind: "organic",
+    posterSrc: "/images/feed/cozy-corner.jpg",
+    posterAlt: "A warm study corner with a wooden desk beside a sunlit window.",
+    durationSeconds: 16,
+    decisionAtSeconds: 8,
+    caption: "a quiet corner for the days when focus feels far away",
+    transcript:
+      "A still, sunlit study corner appears with soft music and a short caption about finding focus. No product or commercial relationship is presented.",
+    placeholderNote:
+      "Picture-first placeholder. Replace with 02-aesthetic-discovery.mp4, 1080 x 1920, 14 to 18 seconds, or an approved vertical still.",
+    accent: "#d4a563",
+    actions: [
+      {
+        id: "like",
+        label: "Like the mood",
+        feedDriftDelta: -4,
+        signalType: "explicit",
+        dataLabel: "Warm study aesthetic added",
+      },
+      {
+        id: "follow",
+        label: "Follow creator",
+        feedDriftDelta: -5,
+        signalType: "explicit",
+        dataLabel: "Study-aesthetic creator affinity added",
+      },
+      {
+        id: "next-video",
+        label: "Next post",
+        feedDriftDelta: -2,
+        signalType: "implicit",
+        dataLabel: "Aesthetic post skipped",
+      },
+    ],
+    researchFeedback:
+      "An ordinary preference can become a stronger recommendation signal when similar posts keep appearing around it.",
+    citationIds: ["baumann-2025"],
+  },
+  {
     id: "unsponsored-review",
     sequenceLabel: "Review",
     role: "The useful review",
@@ -59,7 +103,7 @@ export const feedVideos: readonly FeedVideo[] = [
     caption: "what I liked, what annoyed me, and whether I would buy it again",
     transcript:
       "The creator shows an adjustable desk lamp and explains one useful feature, one drawback, and that they purchased it themselves.",
-    placeholderNote: "Replace with 02-unsponsored-review.mp4, 1080 x 1920, 18 to 20 seconds.",
+    placeholderNote: "Replace with 03-unsponsored-review.mp4, 1080 x 1920, 18 to 20 seconds.",
     accent: "#8b91a0",
     actions: [
       {
@@ -103,7 +147,7 @@ export const feedVideos: readonly FeedVideo[] = [
     caption: "my late-night study reset with Luma",
     transcript:
       "A student works beside a warm desk lamp during a polished late-night routine. A paid partnership disclosure identifies the brand relationship.",
-    placeholderNote: "Replace with 03-sponsored-lifestyle.mp4, 1080 x 1920, 18 to 22 seconds.",
+    placeholderNote: "Replace with 04-sponsored-lifestyle.mp4, 1080 x 1920, 18 to 22 seconds.",
     accent: "#d99b4d",
     recognitionPrompt: {
       question: "Is there a commercial relationship here?",
@@ -152,7 +196,7 @@ export const feedVideos: readonly FeedVideo[] = [
     caption: "3 desk upgrades I would buy again",
     transcript:
       "A creator films a desk setup and recommends three upgrades. The featured lamp appears with a link, discount code, and brief affiliate label.",
-    placeholderNote: "Replace with 04-affiliate-recommendation.mp4, 1080 x 1920, 18 to 22 seconds.",
+    placeholderNote: "Replace with 05-affiliate-recommendation.mp4, 1080 x 1920, 18 to 22 seconds.",
     accent: "#be7aa5",
     recognitionPrompt: {
       question: "Could the creator benefit if you buy?",
@@ -187,6 +231,50 @@ export const feedVideos: readonly FeedVideo[] = [
     citationIds: ["mathur-2018"],
   },
   {
+    id: "trend-repetition",
+    sequenceLabel: "Repetition",
+    role: "The repeated object",
+    title: "Why is this lamp on every desk?",
+    creator: "@setup.loop",
+    contentKind: "organic",
+    posterSrc: "/images/feed/repeated-desks.jpg",
+    posterAlt: "Rows of desks and lamps repeating through a dim study room.",
+    durationSeconds: 18,
+    decisionAtSeconds: 9,
+    caption: "the desk lamp that keeps finding its way back onto my feed",
+    transcript:
+      "A slow photo montage moves across rows of similar study desks. The caption notices how the same style of lamp keeps returning across different posts.",
+    placeholderNote:
+      "Picture-first placeholder. Replace with 06-trend-repetition.mp4, 1080 x 1920, 16 to 20 seconds, or an approved vertical still.",
+    accent: "#8278a8",
+    actions: [
+      {
+        id: "like",
+        label: "Like the setup",
+        feedDriftDelta: 8,
+        signalType: "explicit",
+        dataLabel: "Repeated desk object reinforced",
+      },
+      {
+        id: "keep-watching",
+        label: "Watch the montage",
+        feedDriftDelta: 6,
+        signalType: "implicit",
+        dataLabel: "Repeated product motif completed",
+      },
+      {
+        id: "adjust-recommendation",
+        label: "See fewer like this",
+        feedDriftDelta: -12,
+        signalType: "explicit",
+        dataLabel: "Repeated setup pattern reduced",
+      },
+    ],
+    researchFeedback:
+      "Repetition can make an idea feel familiar. Familiarity is not evidence that an object is necessary or widely representative.",
+    citationIds: ["fazio-2015"],
+  },
+  {
     id: "brand-ad",
     sequenceLabel: "Urgency",
     role: "The obvious advertisement",
@@ -201,7 +289,7 @@ export const feedVideos: readonly FeedVideo[] = [
     caption: "limited-time offer this week",
     transcript:
       "A bright studio image presents the Luma Arc as a product advertisement with a limited-time offer and direct invitation to open the product.",
-    placeholderNote: "Replace with 05-brand-ad.mp4, 1080 x 1920, 15 to 18 seconds.",
+    placeholderNote: "Replace with 07-brand-ad.mp4, 1080 x 1920, 15 to 18 seconds.",
     accent: "#e2c83b",
     actions: [
       {
@@ -249,7 +337,7 @@ export const feedVideos: readonly FeedVideo[] = [
     caption: "live demo. voucher available during this stream",
     transcript:
       "A livestream-style post invites the viewer to inspect a voucher while a person uses a phone beside a colorful desk setup.",
-    placeholderNote: "Replace with 06-shop-urgency.mp4, 1080 x 1920, 18 to 22 seconds.",
+    placeholderNote: "Replace with 08-shop-urgency.mp4, 1080 x 1920, 18 to 22 seconds.",
     accent: "#dd7063",
     actions: [
       {

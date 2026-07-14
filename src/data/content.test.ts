@@ -3,9 +3,9 @@ import { researchSources } from "./sources";
 import { feedVideos } from "./videos";
 
 describe("experience content", () => {
-  it("defines six unique feed posts with complete fallback content", () => {
-    expect(feedVideos).toHaveLength(6);
-    expect(new Set(feedVideos.map((video) => video.id)).size).toBe(6);
+  it("defines eight unique feed posts with complete fallback content", () => {
+    expect(feedVideos).toHaveLength(8);
+    expect(new Set(feedVideos.map((video) => video.id)).size).toBe(8);
 
     for (const video of feedVideos) {
       expect(video.actions).toHaveLength(3);
