@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { researchSources } from "./sources";
 import { feedVideos } from "./videos";
 import { worldviewCases } from "./worldviewCases";
+import { imageCredits } from "./imageCredits";
 
 describe("experience content", () => {
   it("defines eight unique feed posts with complete fallback content", () => {
@@ -36,14 +37,30 @@ describe("experience content", () => {
 
   it("links every worldview case to a source and contextual image", () => {
     const sourceIds = new Set<string>(researchSources.map((source) => source.id));
+    const imageCreditIds = new Set(imageCredits.map((credit) => credit.id));
 
     expect(worldviewCases).toHaveLength(5);
     expect(new Set(worldviewCases.map((item) => item.id)).size).toBe(5);
 
     for (const item of worldviewCases) {
       expect(sourceIds.has(item.sourceId)).toBe(true);
+      expect(imageCreditIds.has(item.imageCreditId)).toBe(true);
       expect(item.imageSrc).toMatch(/^\/images\/worldview\/.+\.jpg$/);
       expect(item.imageAlt.length).toBeGreaterThan(20);
+    }
+  });
+
+  it("keeps every image credit unique and linked to its local asset", () => {
+    expect(new Set(imageCredits.map((credit) => credit.id)).size).toBe(
+      imageCredits.length,
+    );
+    expect(new Set(imageCredits.map((credit) => credit.localPath)).size).toBe(
+      imageCredits.length,
+    );
+
+    for (const credit of imageCredits) {
+      expect(credit.sourceUrl).toMatch(/^https:\/\/unsplash\.com\/photos\//);
+      expect(credit.photographer.length).toBeGreaterThan(2);
     }
   });
 

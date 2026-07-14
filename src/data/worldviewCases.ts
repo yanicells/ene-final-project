@@ -6,7 +6,7 @@ export interface WorldviewCase {
   sourceId: string;
   imageSrc: string;
   imageAlt: string;
-  imageNote: string;
+  imageCreditId: string;
   accent: string;
 }
 
@@ -19,7 +19,7 @@ export const worldviewCases: readonly WorldviewCase[] = [
     sourceId: "ibrahim-2025",
     imageSrc: "/images/worldview/political-recommendation.jpg",
     imageAlt: "Rows of television screens showing different colored images.",
-    imageNote: "Illustrative photo: rows of screens",
+    imageCreditId: "worldview-political-recommendation",
     accent: "#8f86df",
   },
   {
@@ -30,7 +30,7 @@ export const worldviewCases: readonly WorldviewCase[] = [
     sourceId: "piccardi-2024",
     imageSrc: "/images/worldview/emotional-amplification.jpg",
     imageAlt: "A person looking at a phone in a dark room.",
-    imageNote: "Illustrative photo: phone use at night",
+    imageCreditId: "worldview-emotional-amplification",
     accent: "#d36c68",
   },
   {
@@ -41,7 +41,7 @@ export const worldviewCases: readonly WorldviewCase[] = [
     sourceId: "magdy-2025",
     imageSrc: "/images/worldview/palestinian-visibility.jpg",
     imageAlt: "A Palestinian flag being waved at a public protest in São Paulo.",
-    imageNote: "Photo: Palestine solidarity protest in São Paulo",
+    imageCreditId: "worldview-palestinian-visibility",
     accent: "#70a17e",
   },
   {
@@ -52,7 +52,7 @@ export const worldviewCases: readonly WorldviewCase[] = [
     sourceId: "doj-epstein-library-2026",
     imageSrc: "/images/worldview/document-dumps.jpg",
     imageAlt: "Generic stacks of paper documents and file folders.",
-    imageNote: "Illustrative photo: generic files, not DOJ records",
+    imageCreditId: "worldview-document-dumps",
     accent: "#d09a58",
   },
   {
@@ -63,7 +63,7 @@ export const worldviewCases: readonly WorldviewCase[] = [
     sourceId: "fazio-2015",
     imageSrc: "/images/worldview/repetition.jpg",
     imageAlt: "Repeated red, blue, and green lights out of focus.",
-    imageNote: "Illustrative photo: repeated lights",
+    imageCreditId: "worldview-repetition",
     accent: "#60a8c1",
   },
 ] as const;

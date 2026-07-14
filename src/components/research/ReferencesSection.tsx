@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import { imageCredits, type ImageUsage } from "@/data/imageCredits";
 import { researchSources } from "@/data/sources";
 import type { ResearchSource } from "@/types/experience";
 
@@ -10,6 +11,11 @@ const sourceGroups: Array<{
   { label: "Conference research", type: "conference" },
   { label: "Preprints and audits", type: "preprint" },
   { label: "Official records", type: "official" },
+];
+
+const imageCreditGroups: Array<{ label: string; usage: ImageUsage }> = [
+  { label: "Simulation feed", usage: "feed" },
+  { label: "Worldview cases", usage: "worldview" },
 ];
 
 export function ReferencesSection() {
@@ -69,6 +75,57 @@ export function ReferencesSection() {
                 </div>
               );
             })}
+
+            <div>
+              <h3 className="border-b border-stone-400 pb-3 text-sm font-semibold text-stone-700">
+                Image credits
+              </h3>
+              <p className="mt-4 max-w-2xl text-xs leading-5 text-stone-600">
+                All photographs are cropped from the linked originals and used
+                under the Unsplash License. They are visual context, not research
+                evidence or endorsements of the simulation.
+              </p>
+              <div className="mt-8 space-y-10">
+                {imageCreditGroups.map((group) => {
+                  const credits = imageCredits.filter(
+                    (credit) => credit.usage === group.usage,
+                  );
+
+                  return (
+                    <div key={group.usage}>
+                      <h4 className="font-mono text-[0.65rem] uppercase tracking-[0.12em] text-stone-600">
+                        {group.label}
+                      </h4>
+                      <div className="mt-3 grid gap-x-8 md:grid-cols-2 xl:grid-cols-3">
+                        {credits.map((credit) => (
+                          <article
+                            key={credit.id}
+                            id={`image-credit-${credit.id}`}
+                            className="border-t border-stone-300 py-4"
+                          >
+                            <p className="text-sm font-semibold text-stone-800">
+                              {credit.usageLabel}
+                            </p>
+                            <p className="mt-1 text-xs leading-5 text-stone-600">
+                              {credit.photographer}, {credit.source}
+                            </p>
+                            <a
+                              href={credit.sourceUrl}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="mt-2 inline-flex items-center gap-1.5 text-xs font-semibold text-stone-700 underline decoration-stone-300 underline-offset-4 transition hover:text-stone-950"
+                            >
+                              View original photo
+                              <ExternalLink aria-hidden="true" size={12} />
+                            </a>
+                          </article>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
 

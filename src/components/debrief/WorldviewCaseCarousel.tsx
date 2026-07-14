@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useState } from "react";
 import { CitationLink } from "@/components/research/CitationLink";
+import { imageCreditsById } from "@/data/imageCredits";
 import { worldviewCases } from "@/data/worldviewCases";
 
 function getRelativePosition(index: number, activeIndex: number) {
@@ -39,6 +40,7 @@ export function WorldviewCaseCarousel() {
           const position = getRelativePosition(index, activeIndex);
           const isVisible = Math.abs(position) <= 1;
           const isActive = position === 0;
+          const imageCredit = imageCreditsById.get(item.imageCreditId);
 
           return (
             <motion.article
@@ -68,9 +70,16 @@ export function WorldviewCaseCarousel() {
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
-                <span className="absolute bottom-3 left-4 rounded-full bg-black/65 px-3 py-1.5 font-mono text-[0.56rem] uppercase tracking-[0.08em] text-white backdrop-blur-md">
-                  {item.imageNote}
-                </span>
+                {imageCredit && isActive ? (
+                  <a
+                    href={imageCredit.sourceUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="absolute inset-x-0 bottom-0 bg-black/70 px-4 py-2 text-[0.62rem] font-medium text-white/90 backdrop-blur-sm transition hover:bg-black/85"
+                  >
+                    Photo: {imageCredit.photographer}, {imageCredit.source}
+                  </a>
+                ) : null}
               </div>
               <div
                 className="flex min-h-0 flex-1 flex-col p-5 md:p-6"
