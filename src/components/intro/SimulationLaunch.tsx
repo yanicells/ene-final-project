@@ -12,7 +12,7 @@ export function SimulationLaunch() {
   const activePost = feedVideos[activeIndex];
 
   return (
-    <div className="overflow-hidden rounded-[2rem] bg-[#f1cf4f] p-5 text-stone-950 md:p-8 lg:p-10">
+    <div className="overflow-hidden rounded-[2rem] border border-stone-300 bg-[#e8e5de] p-5 text-stone-950 md:p-8 lg:p-10">
       <div className="grid items-end gap-10 lg:grid-cols-[0.68fr_1.32fr]">
         <div>
           <div className="flex items-baseline gap-4">
@@ -20,16 +20,16 @@ export function SimulationLaunch() {
               08
             </span>
             <p className="font-mono text-[0.65rem] uppercase tracking-[0.14em] text-stone-700">
-              fixed posts
-              <br />one changing signal trail
+              posts in the simulation
+              <br />same order for everyone
             </p>
           </div>
           <h3 className="mt-8 max-w-lg text-3xl font-semibold leading-[1.03] tracking-[-0.05em] md:text-5xl">
-            Watch what the feed learns from an ordinary interest.
+            See how one interest turns into a shopping feed.
           </h3>
           <p className="mt-5 max-w-md text-sm leading-6 text-stone-700">
-            Every post is fixed. Your decisions change the data trail and the
-            explanation you receive, not a hidden score.
+            The posts stay the same. Your choices only change the signals we
+            record and the explanation you see at the end.
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export function SimulationLaunch() {
                     ease: [0.22, 1, 0.36, 1],
                   }}
                   aria-label={`Preview post ${index + 1}: ${post.title}`}
-                  className="group relative h-[18rem] min-w-0 basis-0 overflow-hidden rounded-[1rem] border border-white/15 text-left outline-none ring-[#f1cf4f] focus-visible:ring-2 md:h-[20rem]"
+                  className="group relative h-[18rem] min-w-0 basis-0 overflow-hidden rounded-[1rem] border border-white/15 text-left outline-none ring-[#b65a4b] focus-visible:ring-2 md:h-[20rem]"
                 >
                   <Image
                     src={post.posterSrc}
@@ -90,13 +90,13 @@ export function SimulationLaunch() {
 
           <div className="mt-4 flex flex-col gap-3 border-t border-stone-950/25 pt-4 sm:flex-row sm:items-center sm:justify-between">
             <p aria-live="polite" className="text-sm font-semibold">
-              {String(activeIndex + 1).padStart(2, "0")} / 08 · {activePost.role}
+              {String(activeIndex + 1).padStart(2, "0")} / 08 · {activePost.title}
             </p>
             <a
               href="#game"
               className="group inline-flex items-center justify-center gap-3 rounded-full bg-stone-950 px-6 py-3.5 text-sm font-semibold text-[#f4f3ef] transition hover:bg-stone-800 active:scale-[0.98]"
             >
-              Enter the feed
+              Start the simulation
               <ArrowRight
                 aria-hidden="true"
                 size={17}

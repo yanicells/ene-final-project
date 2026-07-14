@@ -47,15 +47,15 @@ export const feedVideos: readonly FeedVideo[] = [
   {
     id: "aesthetic-discovery",
     sequenceLabel: "Discovery",
-    role: "The aesthetic detour",
-    title: "The warm-light corner I keep saving",
+    role: "A quiet visual break",
+    title: "A study corner worth saving",
     creator: "@corners.afterclass",
     contentKind: "organic",
     posterSrc: "/images/feed/cozy-corner.jpg",
     posterAlt: "A warm study corner with a wooden desk beside a sunlit window.",
     durationSeconds: 16,
     decisionAtSeconds: 8,
-    caption: "a quiet corner for the days when focus feels far away",
+    caption: "saving this corner for the next time I need to focus",
     transcript:
       "A still, sunlit study corner appears with soft music and a short caption about finding focus. No product or commercial relationship is presented.",
     placeholderNote:
@@ -85,7 +85,7 @@ export const feedVideos: readonly FeedVideo[] = [
       },
     ],
     researchFeedback:
-      "An ordinary preference can become a stronger recommendation signal when similar posts keep appearing around it.",
+      "Liking one desk photo gives the system another clue about what to show next.",
     citationIds: ["baumann-2025"],
   },
   {
@@ -233,15 +233,15 @@ export const feedVideos: readonly FeedVideo[] = [
   {
     id: "trend-repetition",
     sequenceLabel: "Repetition",
-    role: "The repeated object",
-    title: "Why is this lamp on every desk?",
+    role: "The lamp keeps returning",
+    title: "This lamp is suddenly everywhere",
     creator: "@setup.loop",
     contentKind: "organic",
     posterSrc: "/images/feed/repeated-desks.jpg",
     posterAlt: "Rows of desks and lamps repeating through a dim study room.",
     durationSeconds: 18,
     decisionAtSeconds: 9,
-    caption: "the desk lamp that keeps finding its way back onto my feed",
+    caption: "this desk lamp keeps turning up on my feed",
     transcript:
       "A slow photo montage moves across rows of similar study desks. The caption notices how the same style of lamp keeps returning across different posts.",
     placeholderNote:
@@ -271,7 +271,7 @@ export const feedVideos: readonly FeedVideo[] = [
       },
     ],
     researchFeedback:
-      "Repetition can make an idea feel familiar. Familiarity is not evidence that an object is necessary or widely representative.",
+      "Seeing the same object repeatedly can make it feel normal or necessary. Repetition does not tell you how useful or popular it really is.",
     citationIds: ["fazio-2015"],
   },
   {

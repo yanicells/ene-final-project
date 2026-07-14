@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 import { feedVideos } from "@/data/videos";
 import { CitationLink } from "@/components/research/CitationLink";
 import { MotionReveal } from "@/components/shared/MotionReveal";
@@ -22,10 +21,10 @@ export function GrandNarrativeSection() {
           </p>
         </MotionReveal>
 
-        <MotionReveal className="mt-16 overflow-hidden rounded-[1.8rem] border border-stone-300 bg-[#f4f3ef] p-4 md:p-6">
-          <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
-            {feedVideos.map((video, index) => (
-              <div key={video.id} className="relative">
+        <MotionReveal className="mt-16 rounded-[1.8rem] border border-stone-300 bg-[#f4f3ef] p-4 md:p-6 lg:p-8">
+          <div className="mx-auto grid max-w-[76rem] grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
+            {feedVideos.map((video) => (
+              <div key={video.id}>
                 <div className="relative aspect-[4/5] overflow-hidden rounded-[1.1rem] bg-stone-200">
                   <Image
                     src={video.posterSrc}
@@ -44,11 +43,6 @@ export function GrandNarrativeSection() {
                     </p>
                   </div>
                 </div>
-                {index < feedVideos.length - 1 ? (
-                  <span className="absolute -right-3 top-1/2 z-10 hidden size-6 -translate-y-1/2 place-items-center rounded-full border border-stone-300 bg-[#f4f3ef] text-stone-600 xl:grid">
-                    <ArrowRight aria-hidden="true" size={12} strokeWidth={1.7} />
-                  </span>
-                ) : null}
               </div>
             ))}
           </div>
