@@ -5,7 +5,7 @@
 **Format:** Research-based interactive website  
 **Main platform focus:** TikTok and short-form recommendation feeds  
 **Estimated experience:** 8 to 10 minutes  
-**Status:** High-level content draft. The six game videos and final copy can still change.
+**Status:** High-level content draft. The core six-video argument remains, with two picture-first transition posts added in the current eight-post implementation. Final media and copy can still change.
 
 ---
 

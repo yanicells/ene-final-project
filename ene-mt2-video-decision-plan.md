@@ -3,6 +3,8 @@
 
 **Status:** Working production plan. Adjust the subject, creators, products, and exact copy as real media becomes available.
 
+> **Current implementation update (July 14, 2026):** The simulation now contains eight fixed posts. Two picture-first beats were added around the original six-video spine: an organic aesthetic discovery after the opening interest and a repetition beat before the direct brand ad. The detailed production briefs below still define the six core video assets; the two added stills may remain images or be replaced by approved vertical videos.
+
 ## 1. Core approach
 
 The six videos should feel like one feed learning from one ordinary interest. For the first version, use **student desk setups and study productivity** as the shared interest. It is familiar, visually clear, and can move naturally from harmless interest to product pressure without suggesting that the original interest was a problem.

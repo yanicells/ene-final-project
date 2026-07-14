@@ -1,6 +1,8 @@
 # For You, For Profit
 ## Direct website flow
 
+> **Current implementation update (July 14, 2026):** The guided feed uses eight fixed posts: the original six content beats plus an organic aesthetic discovery and a repetition beat. The two added posts are currently picture-first placeholders.
+
 **Target runtime:** 8 to 10 minutes  
 **Game:** about 4 minutes  
 **Research debrief:** about 4 to 5 minutes

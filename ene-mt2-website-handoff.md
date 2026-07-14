@@ -8,6 +8,8 @@
 **Game target:** 3 minutes 30 seconds to 4 minutes  
 **Content source:** `ene-mt2-content-argument-draft.md`
 
+> **Current implementation update (July 14, 2026):** The shipped simulation expands the six core video beats to eight fixed posts by adding an organic aesthetic discovery and a repetition beat. Both additions currently use documented picture-first placeholders and follow the same decision-and-feedback loop.
+
 ---
 
 ## 1. Product goal
