@@ -1,23 +1,6 @@
 import { CitationLink } from "@/components/research/CitationLink";
 import { MotionReveal } from "@/components/shared/MotionReveal";
-
-const widerCases = [
-  {
-    title: "Political recommendation",
-    body: "A TikTok audit found uneven partisan recommendation patterns during the 2024 U.S. election. It did not establish intentional favoritism or voting effects.",
-    sourceId: "ibrahim-2025",
-  },
-  {
-    title: "Emotional amplification",
-    body: "Changing exposure to partisan hostility on X affected users' emotions and attitudes toward the opposing party in a field experiment.",
-    sourceId: "piccardi-2024",
-  },
-  {
-    title: "Moderation and disappearance",
-    body: "What is removed also shapes the story. Language, context, and cultural interpretation can affect whose content remains visible.",
-    sourceId: "magdy-2025",
-  },
-] as const;
+import { WorldviewCaseCarousel } from "./WorldviewCaseCarousel";
 
 export function BeyondSellingSection() {
   return (
@@ -54,22 +37,9 @@ export function BeyondSellingSection() {
             </div>
           </MotionReveal>
 
-          <div>
-            {widerCases.map((item, index) => (
-              <MotionReveal
-                key={item.title}
-                delay={index * 0.06}
-                className="border-t border-stone-300 py-7 first:pt-0"
-              >
-                <h3 className="text-2xl font-semibold tracking-[-0.04em] text-stone-950">
-                  {item.title}
-                </h3>
-                <p className="mt-4 text-base leading-7 text-stone-600">
-                  {item.body} <CitationLink sourceId={item.sourceId} />
-                </p>
-              </MotionReveal>
-            ))}
-          </div>
+          <MotionReveal delay={0.08}>
+            <WorldviewCaseCarousel />
+          </MotionReveal>
         </div>
 
         <MotionReveal className="mt-14 border-l-4 border-[#f1cf4f] pl-6">

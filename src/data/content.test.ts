@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { researchSources } from "./sources";
 import { feedVideos } from "./videos";
+import { worldviewCases } from "./worldviewCases";
 
 describe("experience content", () => {
   it("defines eight unique feed posts with complete fallback content", () => {
@@ -30,6 +31,19 @@ describe("experience content", () => {
       for (const citationId of video.citationIds) {
         expect(sourceIds.has(citationId)).toBe(true);
       }
+    }
+  });
+
+  it("links every worldview case to a source and contextual image", () => {
+    const sourceIds = new Set<string>(researchSources.map((source) => source.id));
+
+    expect(worldviewCases).toHaveLength(5);
+    expect(new Set(worldviewCases.map((item) => item.id)).size).toBe(5);
+
+    for (const item of worldviewCases) {
+      expect(sourceIds.has(item.sourceId)).toBe(true);
+      expect(item.imageSrc).toMatch(/^\/images\/worldview\/.+\.jpg$/);
+      expect(item.imageAlt.length).toBeGreaterThan(20);
     }
   });
 

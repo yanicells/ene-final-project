@@ -9,6 +9,7 @@ const sourceGroups: Array<{
   { label: "Journal articles", type: "journal" },
   { label: "Conference research", type: "conference" },
   { label: "Preprints and audits", type: "preprint" },
+  { label: "Official records", type: "official" },
 ];
 
 export function ReferencesSection() {

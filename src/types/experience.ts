@@ -87,7 +87,7 @@ export interface ResearchSource {
   shortCitation: string;
   apa: string;
   url: string;
-  sourceType: "journal" | "conference" | "preprint";
+  sourceType: "journal" | "conference" | "preprint" | "official";
   usedIn: readonly string[];
   note: string;
 }

@@ -56,6 +56,15 @@ export const researchSources = [
     note: "Introduces a framework for how people recognize and respond to persuasion.",
   },
   {
+    id: "doj-epstein-library-2026",
+    shortCitation: "U.S. Department of Justice, 2026",
+    apa: "U.S. Department of Justice. (2026). Epstein Library.",
+    url: "https://www.justice.gov/epstein",
+    sourceType: "official",
+    usedIn: ["beyond-selling"],
+    note: "Official document library. Its own notice warns that some files may be difficult to search and that sensitive material may be present.",
+  },
+  {
     id: "ibrahim-2025",
     shortCitation: "Ibrahim et al., 2025",
     apa: "Ibrahim, H., Jang, H. D., Aldahoul, N., Kaufman, A. R., Rahwan, T., & Zaki, Y. (2025). TikTok's recommendations skewed towards Republican content during the 2024 U.S. presidential race [Preprint]. arXiv.",
