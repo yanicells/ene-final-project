@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import { aiReflections, aiStatement } from "@/data/aiDisclosure";
 import { imageCredits } from "@/data/imageCredits";
 import { researchSources } from "@/data/sources";
 import type { ResearchSource } from "@/types/experience";
@@ -107,6 +108,46 @@ export function ReferencesSection() {
                       View original photo
                       <ExternalLink aria-hidden="true" size={12} />
                     </a>
+                  </article>
+                ))}
+              </div>
+            </div>
+
+            <div id="ai-statement" className="scroll-mt-20">
+              <h3 className="border-b border-stone-400 pb-3 text-sm font-semibold text-stone-700">
+                AI statement
+              </h3>
+              <p className="mt-4 max-w-2xl text-sm leading-6 text-stone-700">
+                {aiStatement.body}
+              </p>
+              <dl className="mt-4 space-y-1 text-xs leading-5 text-stone-600">
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-stone-700">AI tools</dt>
+                  <dd>{aiStatement.tools.join(", ")}</dd>
+                </div>
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-stone-700">AI models</dt>
+                  <dd>{aiStatement.models.join(", ")}</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div id="ai-reflections" className="scroll-mt-20">
+              <h3 className="border-b border-stone-400 pb-3 text-sm font-semibold text-stone-700">
+                AI reflections
+              </h3>
+              <div className="grid gap-x-8 md:grid-cols-2">
+                {aiReflections.map((reflection) => (
+                  <article
+                    key={reflection.id}
+                    className="border-b border-stone-300 py-5"
+                  >
+                    <p className="text-sm font-semibold text-stone-800">
+                      {reflection.member}
+                    </p>
+                    <p className="mt-2 text-sm leading-6 text-stone-700">
+                      {reflection.body}
+                    </p>
                   </article>
                 ))}
               </div>
