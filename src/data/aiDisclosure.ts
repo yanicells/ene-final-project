@@ -13,7 +13,7 @@ export const aiStatement = {
 export const aiReflections: readonly AiReflection[] = [
   {
     id: "yani",
-    member: "Yani",
+    member: "Edrian Capistrano",
     body: "Working with generative AI showed me how strong it has become, and honestly it is a little unsettling. That capability is going to reshape the job market, especially for us as CS students. My take is that AI functions as a tool that amplifies whoever is using it well. A developer who knows how to prompt, verify, and edit AI output will outproduce one who does not, but AI on its own does not replace the developer. It replaces the version of them that refuses to use it. Skill still matters, it is just skill plus leverage now, not skill alone.",
   },
 ] as const;
