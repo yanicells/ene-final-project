@@ -4,7 +4,7 @@ ENE 13.05i Major Task 2
 
 A research-informed simulation about attention, recommendation, and the stories a feed can assemble around an ordinary interest.
 
-Recommendation feeds learn from our attention, arrange what comes next, and can slowly turn an interest into a story about what we should want.
+A feed looks like it just reflects what you already like. It does more than that. It learns from your attention, arranges what comes next, and can turn one ordinary interest into a story about what to buy, and eventually what to believe. This project lets you feel that happen, then asks how much of it you can control.
 
 ---
 
@@ -46,9 +46,15 @@ I can keep the interests that are mine without letting every interest become a p
 
 **Sequence**
 
-Interest → Review → Lifestyle → Recommendation → Urgency → Purchase
+Interest → Discovery → Review → Lifestyle → Recommendation → Repetition → Urgency → Purchase
 
-Go through six fixed posts. Decide what deserves your attention. Your choices affect the simulation, but there is no perfect score.
+**Simulation launch panel**
+
+08 posts in the simulation. Same order for everyone.
+
+See how one interest turns into a shopping feed.
+
+The posts stay the same. Your choices only change the signals we record and the explanation you see at the end.
 
 ---
 
@@ -79,7 +85,24 @@ Actions:
 
 Feedback: Your interest is real. A like, follow, or completed view can help the system decide what belongs next.
 
-### Post 2 — Review
+### Post 2 — Discovery
+
+**A quiet visual break**
+
+- Creator: @corners.afterclass
+- Title: A study corner worth saving
+- Caption: saving this corner for the next time I need to focus
+- Transcript: A still, sunlit study corner appears with soft music and a short caption about finding focus. No product or commercial relationship is presented.
+
+Actions:
+
+- Like the mood → Warm study aesthetic added
+- Follow creator → Study-aesthetic creator affinity added
+- Next post → Aesthetic post skipped
+
+Feedback: Liking one desk photo gives the system another clue about what to show next.
+
+### Post 3 — Review
 
 **The useful review**
 
@@ -97,7 +120,7 @@ Actions:
 
 Feedback: A post can encourage consumption even when the creator was not paid to make it.
 
-### Post 3 — Lifestyle
+### Post 4 — Lifestyle
 
 **The disclosed promotion**
 
@@ -117,7 +140,7 @@ Actions:
 
 Feedback: A clear disclosure can make a creator's commercial relationship easier to recognize.
 
-### Post 4 — Recommendation
+### Post 5 — Recommendation
 
 **The subtle affiliate**
 
@@ -137,7 +160,24 @@ Actions:
 
 Feedback: Affiliate posts can resemble ordinary recommendations, and a short label may not explain the creator's financial incentive clearly.
 
-### Post 5 — Urgency
+### Post 6 — Repetition
+
+**The lamp keeps returning**
+
+- Creator: @setup.loop
+- Title: This lamp is suddenly everywhere
+- Caption: this desk lamp keeps turning up on my feed
+- Transcript: A slow photo montage moves across rows of similar study desks. The caption notices how the same style of lamp keeps returning across different posts.
+
+Actions:
+
+- Like the setup → Repeated desk object reinforced
+- Watch the montage → Repeated product motif completed
+- See fewer like this → Repeated setup pattern reduced
+
+Feedback: Seeing the same object repeatedly can make it feel normal or necessary. Repetition does not tell you how useful or popular it really is.
+
+### Post 7 — Urgency
 
 **The obvious advertisement**
 
@@ -157,7 +197,7 @@ Actions:
 
 Feedback: Skipping and explicit rejection can both shape the feed, but they do not communicate the same thing.
 
-### Post 6 — Purchase
+### Post 8 — Purchase
 
 **The purchase push**
 
@@ -249,7 +289,7 @@ The exact weights remain controlled by the platform. This diagram shows categori
 
 The first post reflected a real interest. What followed connected that interest to a product, a lifestyle, a recommendation, urgency, and a chance to buy. Repeated engagement can reinforce aligned content while reducing exploration. (Baumann et al., 2025)
 
-Story path: A genuine interest → The useful review → The disclosed promotion → The subtle affiliate → The obvious advertisement → The purchase push
+Story path: A genuine interest → A quiet visual break → The useful review → The disclosed promotion → The subtle affiliate → The lamp keeps returning → The obvious advertisement → The purchase push
 
 The system does not need to invent desire.
 
@@ -308,14 +348,22 @@ Selective visibility: Ranking decides what becomes easy to see.
 
 Both Facebook’s ranking and users’ choices reduced exposure to politically cross-cutting news. The information environment was shaped by platform curation and human behavior together. (Bakshy et al., 2015)
 
-**Political recommendation**  
-A TikTok audit found uneven partisan recommendation patterns during the 2024 U.S. election. It did not establish intentional favoritism or voting effects. (Ibrahim et al., 2025)
+Worldview case carousel:
 
-**Emotional amplification**  
-Changing exposure to partisan hostility on X affected users' emotions and attitudes toward the opposing party in a field experiment. (Piccardi et al., 2024)
+**Political posts in recommendations** — Recommendation audit  
+During the 2024 U.S. election, a TikTok audit found more Republican than Democratic posts in its recommendations. The study did not test why this happened or whether it changed votes. (Ibrahim et al., 2025)
 
-**Moderation and disappearance**  
-What is removed also shapes the story. Language, context, and cultural interpretation can affect whose content remains visible. (Magdy et al., 2025)
+**Hostile posts change how people feel** — Field experiment  
+In a field experiment on X, changing how much partisan hostility people saw affected their emotions and how they viewed the other party. (Piccardi et al., 2024)
+
+**Palestinian posts and moderation** — Content moderation study  
+Researchers showed 448 Arabic posts removed by Facebook to Arab annotators. The annotators often read the platform's rules differently from Facebook's moderators. (Magdy et al., 2025)
+
+**Reading the Epstein files in context** — Reading document releases  
+The DOJ library contains several kinds of releases, and some files cannot be searched reliably. A cropped page or isolated name loses its document type, date, and surrounding context. Being named in a file does not prove wrongdoing. (U.S. Department of Justice, 2026)
+
+**Repetition changes what feels true** — Repetition study  
+When the same claim keeps appearing, it can start to feel accurate, even to someone who knows the correct answer. A crowded feed can make a common claim look widely accepted. (Fazio et al., 2015)
 
 Frequent does not mean true. Visible does not mean representative. Personalized does not mean neutral.
 
@@ -359,6 +407,37 @@ Your attention begins with you. The system decides what to do with it next. Mean
 
 ---
 
+## AI disclosure
+
+How generative AI was used while building this site, and what each member took from working with it.
+
+### AI statement
+
+We used generative AI mainly to help with coding and web design. The overall concept, research, and flow of the site came from our own brainstorming as a group. Once we had a direction, we turned to AI for layout help, animations, effects, and details like typography and color palette. We set up the project structure and general flow ourselves, and AI mostly helped polish what we already built. The process was back and forth: we would rough something out for the idea we wanted, then bring in AI to clean it up and refine it.
+
+- AI tools: Claude Code, Codex, Cursor
+- AI models: GPT 5.6 Sol, Composer 2, Opus 4.7
+
+### AI reflections
+
+**Edrian Capistrano**
+
+Working with generative AI showed me how strong it has become, and honestly it is a little unsettling. That capability is going to reshape the job market, especially for us as CS students. My take is that AI functions as a tool that amplifies whoever is using it well. A developer who knows how to prompt, verify, and edit AI output will outproduce one who does not, but AI on its own does not replace the developer. It replaces the version of them that refuses to use it. Skill still matters, it is just skill plus leverage now, not skill alone.
+
+**Kenaz Celestino**
+
+The power that AI gives us also comes with great responsibility. Knowing how to use it responsibly and ethically allows it to supplement our learning and increase the efficiency of our workflows. Unfortunately, the rapid development of AI also came with a huge increase in its misuse. AI allows people to skip learning the foundational skills in most fields, but those with a strong grasp of the foundations still have a huge advantage. As a CS student, that is exactly why I still want to build the fundamentals myself. AI can speed up the work, but it cannot replace actually understanding how and why the code works.
+
+**Coby Velasco**
+
+When it comes to AI, it's shocking how advanced it's become, capable of so many things now. Personally, I think that it's an important skill to have, as being able to make use of AI can lead to more efficiency and better outputs. For me, so long as it doesn't compromise our own personal and original ideas, and instead help flesh them out, it'll ultimately be a benefit. I've been told a quote by senior developers that I still stick to now, "Better than a skilled person is a skilled person who makes use of these new tools"
+
+**Pierce Cabalteja**
+
+The progress AI has made in the last couple of years has been remarkable. The capabilities AI has shown and its future possibilities makes it inescapable, especially for people in CS such as myself. In this digital age where things move fast, AI is a fantastic tool that helps the user navigate through it. It will improve the lives of the people using it as long as it is used as a tool and not a replacement to the user's thinking process.
+
+---
+
 ## Sources
 
 Recent TikTok audits are labeled as preprints. Their findings are evidence from controlled studies, not a complete description of every user’s feed.
@@ -399,7 +478,7 @@ Tests how follows, likes, view rate, language, and location affect recommendatio
 Ibrahim, H., Jang, H. D., Aldahoul, N., Kaufman, A. R., Rahwan, T., & Zaki, Y. (2025). TikTok's recommendations skewed towards Republican content during the 2024 U.S. presidential race [Preprint]. arXiv.  
 A controlled audit reporting uneven partisan recommendation patterns without establishing intent.
 
-Kaplan, L., Patel, D., Gerzon, N., Mislove, A., & Sapiezynski, P. (2026). When For You isn't for you: Measuring user agency in TikTok's algorithmic feed [Preprint]. arXiv.  
+Kaplan, L., Patel, D., Gerzon, N., Mislove, A., & Sapiezynski, P. (2026). When “For You” isn't for you: Measuring user agency in TikTok's algorithmic feed [Preprint]. arXiv.  
 Compares implicit and explicit signals and examines the limits of Not Interested.
 
 Magdy, W., Mubarak, H., & Salminen, J. (2025). Who should set the standards? Analysing censored Arabic content on Facebook during the Palestine-Israel conflict [Preprint]. arXiv.  
@@ -410,6 +489,21 @@ A field experiment on how ranked exposure can affect emotions and out-party atti
 
 Vera, J. A., & Ghosh, S. (2025). They've over-emphasized that one search: Controlling unwanted content on TikTok's For You Page [Preprint]. arXiv.  
 Documents user experiences and uneven success when trying to remove unwanted recommendations.
+
+### Official records
+
+U.S. Department of Justice. (2026). Epstein Library.  
+Official document library. Its own notice warns that some files may be difficult to search and that sensitive material may be present.
+
+### Image credits
+
+The photographs used in the worldview cards are cropped from the linked originals under the Unsplash License. They provide visual context, not research evidence.
+
+- Political recommendation case — Markus Winkler, Unsplash
+- Emotional amplification case — Zac Wolff, Unsplash
+- Palestinian visibility case — Selena Jiménez, Unsplash
+- Epstein files context case — Wesley Tingey, Unsplash
+- Repetition case — Nick Pampoukidis, Unsplash
 
 ---
 
