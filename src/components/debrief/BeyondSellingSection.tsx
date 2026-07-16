@@ -13,6 +13,12 @@ export function BeyondSellingSection() {
           <h2 className="mt-5 text-5xl font-semibold leading-[0.94] tracking-[-0.06em] text-stone-950 md:text-7xl">
             The feed can sell a product. It can also normalize a worldview.
           </h2>
+          <p className="mt-8 max-w-3xl text-lg leading-8 text-stone-600">
+            This is the same grand narrative working on another subject. The
+            ranking that arranged a story around a lamp can arrange one around a
+            party or a conflict. It does not have to prefer a side. It only has
+            to find what holds attention and keep returning to it.
+          </p>
         </MotionReveal>
 
         <div className="mt-16 grid gap-12 lg:grid-cols-[1.12fr_0.88fr] lg:gap-20">

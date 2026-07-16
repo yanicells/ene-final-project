@@ -12,9 +12,9 @@ export function ResearchDebrief() {
     <div id="debrief" className="scroll-mt-14">
       <TechnicalDebrief />
       <GrandNarrativeSection />
+      <BeyondSellingSection />
       <MicroNarrativeSection />
       <AgencyBeyondControls />
-      <BeyondSellingSection />
       <AgencyLimitsSection />
       <SystemicResponsibility />
       <FinalMessage />

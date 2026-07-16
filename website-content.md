@@ -36,6 +36,8 @@ Having an interest should lead to wanting more, comparing more, and eventually b
 
 No single post has to say this. The larger story forms when reviews, lifestyles, links, and urgency keep returning in order.
 
+This simulation builds that story around a product. The same ranking can build one around a worldview.
+
 **Micro narrative**
 
 I can keep the interests that are mine without letting every interest become a purchase.
@@ -285,7 +287,7 @@ What behavior also revealed (implicit):
 
 The exact weights remain controlled by the platform. This diagram shows categories of signals, not TikTok’s proprietary ranking model. Controlled accounts found that both explicit and implicit feedback changed personalized content. (Kaplan et al., 2026)
 
-### No single post told the whole story.
+### Grand narrative — No single post told the whole story.
 
 The first post reflected a real interest. What followed connected that interest to a product, a lifestyle, a recommendation, urgency, and a chance to buy. Repeated engagement can reinforce aligned content while reducing exploration. (Baumann et al., 2025)
 
@@ -295,9 +297,40 @@ The system does not need to invent desire.
 
 It can capture a real interest and repeatedly redirect it toward consumption.
 
-### Resistance is a pattern, not one heroic click.
+This story was about buying. The system that told it was not built for buying. It was built to hold attention. Consumption is one story that holds attention. It is not the only one.
 
-Passive participation is easy. Deliberate rejection often takes more effort and may need to be repeated when unwanted content returns. (Kaplan et al., 2026)
+### Beyond selling
+
+**The feed can sell a product. It can also normalize a worldview.**
+
+This is the same grand narrative working on another subject. The ranking that arranged a story around a lamp can arrange one around a party or a conflict. It does not have to prefer a side. It only has to find what holds attention and keep returning to it.
+
+Selective visibility: Ranking decides what becomes easy to see.
+
+Both Facebook’s ranking and users’ choices reduced exposure to politically cross-cutting news. The information environment was shaped by platform curation and human behavior together. (Bakshy et al., 2015)
+
+Worldview case carousel:
+
+**Political posts in recommendations** — Recommendation audit  
+During the 2024 U.S. election, a TikTok audit found more Republican than Democratic posts in its recommendations. The study did not test why this happened or whether it changed votes. (Ibrahim et al., 2025)
+
+**Hostile posts change how people feel** — Field experiment  
+In a field experiment on X, changing how much partisan hostility people saw affected their emotions and how they viewed the other party. (Piccardi et al., 2024)
+
+**Palestinian posts and moderation** — Content moderation study  
+Researchers showed 448 Arabic posts removed by Facebook to Arab annotators. The annotators often read the platform's rules differently from Facebook's moderators. (Magdy et al., 2025)
+
+**Reading the Epstein files in context** — Reading document releases  
+The DOJ library contains several kinds of releases, and some files cannot be searched reliably. A cropped page or isolated name loses its document type, date, and surrounding context. Being named in a file does not prove wrongdoing. (U.S. Department of Justice, 2026)
+
+**Repetition changes what feels true** — Repetition study  
+When the same claim keeps appearing, it can start to feel accurate, even to someone who knows the correct answer. A crowded feed can make a common claim look widely accepted. (Fazio et al., 2015)
+
+Frequent does not mean true. Visible does not mean representative. Personalized does not mean neutral.
+
+### Resistance is a pattern. The system reads patterns.
+
+It is never one heroic click. Passive participation is easy. Deliberate rejection often takes more effort and may need to be repeated when unwanted content returns. (Kaplan et al., 2026)
 
 Inside the platform:
 
@@ -306,6 +339,18 @@ Inside the platform:
 - Filter a term or change topic settings
 - Refresh the feed
 - Choose Following more intentionally
+
+What rejection teaches it:
+
+Every correction is also information. Not Interested is an explicit signal, and controlled accounts found that both explicit and implicit feedback changed personalized content. (Kaplan et al., 2026) Telling the system what you do not want teaches it to predict you more precisely.
+
+The feed does not tell everyone the same story. It tells each person their own, and that is what makes it work. Repeated engagement reinforces aligned content while reducing exploration. (Baumann et al., 2025) An interest in resisting can be amplified the same way an interest in lamps can.
+
+What it reads poorly:
+
+So a micro narrative cannot only be a preference. A preference is readable. What the system reads poorly is what happens where it cannot measure: the purchase you do not make, the app you leave, the claim you check somewhere else, the conclusion you keep to yourself.
+
+This is not a clean escape. Recognizing persuasion does not remove its effects. (Rozendaal et al., 2011) Users report uneven success when removing unwanted recommendations. (Vera & Ghosh, 2025)
 
 Beyond the controls:
 
@@ -339,33 +384,6 @@ Try this instead: Compare reviews, evidence, and prices somewhere else.
 Emotional content can hold attention quickly. A pause creates room to separate a strong feeling from a reliable claim.  
 Try this instead: Wait before sharing and verify the claim independently.  
 (Piccardi et al., 2024)
-
-### Beyond selling
-
-**The feed can sell a product. It can also normalize a worldview.**
-
-Selective visibility: Ranking decides what becomes easy to see.
-
-Both Facebook’s ranking and users’ choices reduced exposure to politically cross-cutting news. The information environment was shaped by platform curation and human behavior together. (Bakshy et al., 2015)
-
-Worldview case carousel:
-
-**Political posts in recommendations** — Recommendation audit  
-During the 2024 U.S. election, a TikTok audit found more Republican than Democratic posts in its recommendations. The study did not test why this happened or whether it changed votes. (Ibrahim et al., 2025)
-
-**Hostile posts change how people feel** — Field experiment  
-In a field experiment on X, changing how much partisan hostility people saw affected their emotions and how they viewed the other party. (Piccardi et al., 2024)
-
-**Palestinian posts and moderation** — Content moderation study  
-Researchers showed 448 Arabic posts removed by Facebook to Arab annotators. The annotators often read the platform's rules differently from Facebook's moderators. (Magdy et al., 2025)
-
-**Reading the Epstein files in context** — Reading document releases  
-The DOJ library contains several kinds of releases, and some files cannot be searched reliably. A cropped page or isolated name loses its document type, date, and surrounding context. Being named in a file does not prove wrongdoing. (U.S. Department of Justice, 2026)
-
-**Repetition changes what feels true** — Repetition study  
-When the same claim keeps appearing, it can start to feel accurate, even to someone who knows the correct answer. A crowded feed can make a common claim look widely accepted. (Fazio et al., 2015)
-
-Frequent does not mean true. Visible does not mean representative. Personalized does not mean neutral.
 
 ### Users are neither powerless nor fully in control.
 
