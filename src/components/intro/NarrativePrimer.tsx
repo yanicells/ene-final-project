@@ -37,6 +37,10 @@ export function NarrativePrimer() {
                 No single post has to say this. The larger story forms when
                 reviews, lifestyles, links, and urgency keep returning in order.
               </p>
+              <p className="mt-4 max-w-lg text-base leading-7 text-stone-600">
+                This simulation builds that story around a product. The same
+                ranking can build one around a worldview.
+              </p>
             </div>
           </MotionReveal>
 

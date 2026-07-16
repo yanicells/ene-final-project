@@ -24,7 +24,7 @@ export const researchSources = [
     ],
     url: "https://doi.org/10.48550/arXiv.2503.20231",
     sourceType: "preprint",
-    usedIn: ["opening", "grand-narrative"],
+    usedIn: ["opening", "grand-narrative", "micro-narrative"],
     note: "A TikTok audit studying interest amplification and declining exploration.",
   },
   {
@@ -121,7 +121,7 @@ export const researchSources = [
     ],
     url: "https://doi.org/10.48550/arXiv.2605.10690",
     sourceType: "preprint",
-    usedIn: ["game", "controls", "limits"],
+    usedIn: ["game", "controls", "limits", "micro-narrative"],
     note: "Compares implicit and explicit signals and examines the limits of Not Interested.",
   },
   {
@@ -195,7 +195,7 @@ export const researchSources = [
     ],
     url: "https://doi.org/10.2753/JOA0091-3367400108",
     sourceType: "journal",
-    usedIn: ["persuasion"],
+    usedIn: ["persuasion", "micro-narrative"],
     note: "Explains why recognizing advertising does not automatically remove its effects.",
   },
   {
@@ -211,7 +211,7 @@ export const researchSources = [
     ],
     url: "https://doi.org/10.48550/arXiv.2504.13895",
     sourceType: "preprint",
-    usedIn: ["controls", "limits"],
+    usedIn: ["controls", "limits", "micro-narrative"],
     note: "Documents user experiences and uneven success when trying to remove unwanted recommendations.",
   },
 ] as const satisfies readonly ResearchSource[];

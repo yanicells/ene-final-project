@@ -9,7 +9,10 @@ export function GrandNarrativeSection() {
       <div className="mx-auto max-w-[1480px]">
         <MotionReveal className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
           <div>
-            <h2 className="text-5xl font-semibold leading-[0.94] tracking-[-0.06em] text-stone-950 md:text-7xl">
+            <p className="font-mono text-xs uppercase tracking-[0.14em] text-stone-600">
+              Grand narrative
+            </p>
+            <h2 className="mt-5 text-5xl font-semibold leading-[0.94] tracking-[-0.06em] text-stone-950 md:text-7xl">
               No single post told the whole story.
             </h2>
           </div>
@@ -55,6 +58,14 @@ export function GrandNarrativeSection() {
           <p className="text-3xl font-semibold leading-[1.08] tracking-[-0.045em] text-stone-500 md:text-4xl">
             It can capture a real interest and repeatedly redirect it toward
             consumption.
+          </p>
+        </MotionReveal>
+
+        <MotionReveal className="mt-14 border-t border-stone-400 pt-7">
+          <p className="max-w-3xl text-lg leading-8 text-stone-600">
+            This story was about buying. The system that told it was not built
+            for buying. It was built to hold attention. Consumption is one story
+            that holds attention. It is not the only one.
           </p>
         </MotionReveal>
       </div>
