@@ -23,10 +23,12 @@ export function ProjectIntro() {
             <span className="block text-stone-500">For Profit.</span>
           </h1>
           <div className="mt-9 flex flex-col gap-7 border-t border-stone-300 pt-7 sm:flex-row sm:items-end sm:justify-between">
-            <p className="max-w-xl text-lg leading-8 text-stone-650">
-              Recommendation feeds learn from our attention, arrange what comes
-              next, and can slowly turn an interest into a story about what we
-              should want.
+            <p className="max-w-2xl text-lg leading-8 text-stone-650">
+              A feed looks like it just reflects what you already like. It does
+              more than that. It learns from your attention, arranges what comes
+              next, and can turn one ordinary interest into a story about what to
+              buy, and eventually what to believe. This project lets you feel
+              that happen, then asks how much of it you can control.
             </p>
             <a
               href="#opening"
