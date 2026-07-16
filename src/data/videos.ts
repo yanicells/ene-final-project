@@ -8,7 +8,7 @@ export const feedVideos: readonly FeedVideo[] = [
     title: "Resetting my desk before I focus",
     creator: "@mika.studies",
     contentKind: "organic",
-    posterSrc: "/images/feed/desk-setup.jpg",
+    posterSrc: "/images/feed/1-sandrin.jpg",
     posterAlt: "A warm desk setup with a monitor, keyboard, plants, and a light bar.",
     durationSeconds: 17,
     decisionAtSeconds: 8,
@@ -51,13 +51,14 @@ export const feedVideos: readonly FeedVideo[] = [
     title: "A study corner worth saving",
     creator: "@corners.afterclass",
     contentKind: "organic",
-    posterSrc: "/images/feed/cozy-corner.jpg",
-    posterAlt: "A warm study corner with a wooden desk beside a sunlit window.",
+    posterSrc: "/images/feed/2-thuan-pham.jpg",
+    posterAlt:
+      "A quiet study corner with a desk beside a bright window, bookshelves, and a warm hanging lamp.",
     durationSeconds: 16,
     decisionAtSeconds: 8,
     caption: "saving this corner for the next time I need to focus",
     transcript:
-      "A still, sunlit study corner appears with soft music and a short caption about finding focus. No product or commercial relationship is presented.",
+      "A still study corner appears, with a desk by a bright window and a warm lamp glowing over the bookshelves. Soft music and a short caption about finding focus. No product or commercial relationship is presented.",
     placeholderNote:
       "Picture-first placeholder. Replace with 02-aesthetic-discovery.mp4, 1080 x 1920, 14 to 18 seconds, or an approved vertical still.",
     accent: "#d4a563",
@@ -95,14 +96,14 @@ export const feedVideos: readonly FeedVideo[] = [
     title: "The lamp I kept on my desk",
     creator: "@afterclass",
     contentKind: "unsponsored-review",
-    posterSrc: "/images/feed/lamp-detail.jpg",
-    posterAlt: "A gray adjustable desk lamp on a wooden table.",
+    posterSrc: "/images/feed/3-ron-lach.jpg",
+    posterAlt: "A small white table lamp glowing over open magazines on a desk.",
     durationSeconds: 19,
     decisionAtSeconds: 9,
     disclosure: "Bought with my own money",
     caption: "what I liked, what annoyed me, and whether I would buy it again",
     transcript:
-      "The creator shows an adjustable desk lamp and explains one useful feature, one drawback, and that they purchased it themselves.",
+      "The creator shows the small table lamp beside their reading stack and explains one useful feature, one drawback, and that they purchased it themselves.",
     placeholderNote: "Replace with 03-unsponsored-review.mp4, 1080 x 1920, 18 to 20 seconds.",
     accent: "#8b91a0",
     actions: [
@@ -139,14 +140,15 @@ export const feedVideos: readonly FeedVideo[] = [
     title: "My late-night study reset",
     creator: "@toni.afterdark",
     contentKind: "sponsored-creator",
-    posterSrc: "/images/feed/student-reading.jpg",
-    posterAlt: "A student working beside a small lamp and laptop at night.",
+    posterSrc: "/images/feed/4-zinep.jpg",
+    posterAlt:
+      "An open book and notebook on a bed beside a glowing bedside lamp at night.",
     durationSeconds: 20,
     decisionAtSeconds: 9,
     disclosure: "Paid partnership with Luma",
     caption: "my late-night study reset with Luma",
     transcript:
-      "A student works beside a warm desk lamp during a polished late-night routine. A paid partnership disclosure identifies the brand relationship.",
+      "A polished late-night wind-down: an open book and notebook on the bed, lit by a warm lamp. A paid partnership disclosure identifies the brand relationship.",
     placeholderNote: "Replace with 04-sponsored-lifestyle.mp4, 1080 x 1920, 18 to 22 seconds.",
     accent: "#d99b4d",
     recognitionPrompt: {
@@ -188,14 +190,15 @@ export const feedVideos: readonly FeedVideo[] = [
     title: "Three desk upgrades I use daily",
     creator: "@softfocus.setup",
     contentKind: "affiliate",
-    posterSrc: "/images/feed/hanging-light.jpg",
-    posterAlt: "A creator holding a camera in front of a neat desk setup.",
+    posterSrc: "/images/feed/5-elijah-pilchard.jpg",
+    posterAlt:
+      "A wooden desk with a laptop, two lamps, a candle, and small plants.",
     durationSeconds: 21,
     decisionAtSeconds: 10,
     disclosure: "links and code in bio #affiliate",
     caption: "3 desk upgrades I would buy again",
     transcript:
-      "A creator films a desk setup and recommends three upgrades. The featured lamp appears with a link, discount code, and brief affiliate label.",
+      "A creator pans across a wooden desk filled with upgrades and recommends three favorites. The featured lamp appears with a link, discount code, and brief affiliate label.",
     placeholderNote: "Replace with 05-affiliate-recommendation.mp4, 1080 x 1920, 18 to 22 seconds.",
     accent: "#be7aa5",
     recognitionPrompt: {
@@ -237,13 +240,14 @@ export const feedVideos: readonly FeedVideo[] = [
     title: "This lamp is suddenly everywhere",
     creator: "@setup.loop",
     contentKind: "organic",
-    posterSrc: "/images/feed/repeated-desks.jpg",
-    posterAlt: "Rows of desks and lamps repeating through a dim study room.",
+    posterSrc: "/images/feed/6-hedefneydii.jpg",
+    posterAlt:
+      "A glowing pleated lamp beside a candle, tea, and handwritten notes at night.",
     durationSeconds: 18,
     decisionAtSeconds: 9,
     caption: "this desk lamp keeps turning up on my feed",
     transcript:
-      "A slow photo montage moves across rows of similar study desks. The caption notices how the same style of lamp keeps returning across different posts.",
+      "Another cozy study desk appears, centered on the same style of warm lamp beside a candle and handwritten notes. The caption notices how this lamp keeps returning across different posts.",
     placeholderNote:
       "Picture-first placeholder. Replace with 06-trend-repetition.mp4, 1080 x 1920, 16 to 20 seconds, or an approved vertical still.",
     accent: "#8278a8",
@@ -281,14 +285,14 @@ export const feedVideos: readonly FeedVideo[] = [
     title: "Better light for late nights",
     creator: "Luma Studio",
     contentKind: "brand-ad",
-    posterSrc: "/images/feed/brand-lamp.jpg",
-    posterAlt: "A modern yellow lamp against a yellow studio background.",
+    posterSrc: "/images/feed/7-alphaen.jpg",
+    posterAlt: "A glossy yellow desk lamp glowing in a dim, minimalist workspace.",
     durationSeconds: 17,
     decisionAtSeconds: 8,
     disclosure: "Advertisement",
     caption: "limited-time offer this week",
     transcript:
-      "A bright studio image presents the Luma Arc as a product advertisement with a limited-time offer and direct invitation to open the product.",
+      "A stylized product shot presents the Luma Arc glowing on a dim desk, with a limited-time offer and direct invitation to open the product.",
     placeholderNote: "Replace with 07-brand-ad.mp4, 1080 x 1920, 15 to 18 seconds.",
     accent: "#e2c83b",
     actions: [
@@ -329,14 +333,15 @@ export const feedVideos: readonly FeedVideo[] = [
     title: "Voucher available during this stream",
     creator: "Luma Live",
     contentKind: "shop-content",
-    posterSrc: "/images/feed/shop-phone.jpg",
-    posterAlt: "A person using a phone in front of a colorful desk monitor.",
+    posterSrc: "/images/feed/8-davdkuko.jpg",
+    posterAlt:
+      "A person writing in a notebook while a phone mounted on a gimbal records them.",
     durationSeconds: 20,
     decisionAtSeconds: 9,
     disclosure: "Simulated shop livestream",
     caption: "live demo. voucher available during this stream",
     transcript:
-      "A livestream-style post invites the viewer to inspect a voucher while a person uses a phone beside a colorful desk setup.",
+      "A livestream-style post invites the viewer to inspect a voucher while the seller takes notes on camera, a phone mounted on a gimbal recording the demo.",
     placeholderNote: "Replace with 08-shop-urgency.mp4, 1080 x 1920, 18 to 22 seconds.",
     accent: "#dd7063",
     actions: [

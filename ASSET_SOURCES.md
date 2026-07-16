@@ -2,20 +2,20 @@
 
 These photographs are temporary stand-ins for the eight vertical posts in the simulation. Replace them with approved project media before the final presentation when possible.
 
-All listed photographs were downloaded from Unsplash and marked free to use under the [Unsplash License](https://unsplash.com/license) at the time of download. Each source page and photographer credit was verified again on July 14, 2026.
+All listed photographs were downloaded from Pexels and marked free to use under the [Pexels License](https://www.pexels.com/license/) at the time of download. Each source page and photographer credit was verified on July 16, 2026.
 
 | Local file | Photographer | Source |
 |---|---|---|
-| `public/images/feed/desk-setup.jpg` | Elijah Pilchard | [Desk setup with computer and lamps](https://unsplash.com/photos/CjFZM1IiGw4) |
-| `public/images/feed/cozy-corner.jpg` | Tsimur Asayonak | [Sunlit room with a desk](https://unsplash.com/photos/1zgfRSa4ucc) |
-| `public/images/feed/lamp-detail.jpg` | Andrej Lišakov | [Gray balanced-arm lamp on a wooden table](https://unsplash.com/photos/3A4XZUopCJA) |
-| `public/images/feed/student-reading.jpg` | Karina Nizametdinova | [Person studying in front of a laptop](https://unsplash.com/photos/TtAHLsnbz3o) |
-| `public/images/feed/hanging-light.jpg` | Nubelson Fernandes | [Camera and desk setup](https://unsplash.com/photos/L4b8DB_NPbM) |
-| `public/images/feed/repeated-desks.jpg` | Brooke Balentine | [Desks with lamps in a study area](https://unsplash.com/photos/QSwKgj4qzTQ) |
-| `public/images/feed/brand-lamp.jpg` | ObjectType RAW | [Modern yellow desk lamp](https://unsplash.com/photos/MSUXmdgq8nc) |
-| `public/images/feed/shop-phone.jpg` | Jonas Leupe | [Person using a phone at a desk](https://unsplash.com/photos/o0A5BpHxziU) |
+| `public/images/feed/1-sandrin.jpg` | sandrin | [Keyboard and Monitor on Desk](https://www.pexels.com/photo/keyboard-and-monitor-on-desk-24357529/) |
+| `public/images/feed/2-thuan-pham.jpg` | Thuan Pham | [Cozy Reading Nook with Warm Lamp Light in Jaipur](https://www.pexels.com/photo/cozy-reading-nook-with-warm-lamp-light-in-jaipur-34056820/) |
+| `public/images/feed/3-ron-lach.jpg` | Ron Lach | [A Magazines and Desk Lamp at the Table](https://www.pexels.com/photo/a-magazines-and-desk-lamp-at-the-table-8085253/) |
+| `public/images/feed/4-zinep.jpg` | Zeynep M. | [Books and Pen on Bed](https://www.pexels.com/photo/books-and-pen-on-bed-18348191/) |
+| `public/images/feed/5-elijah-pilchard.jpg` | Elijah Pilchard | [Wooden Desk at Home](https://www.pexels.com/photo/wooden-desk-at-home-12792218/) |
+| `public/images/feed/6-hedefneydii.jpg` | Hedefneydii | [Cozy Study Desk with Warm Lighting and Notes](https://www.pexels.com/photo/cozy-study-desk-with-warm-lighting-and-notes-35462658/) |
+| `public/images/feed/7-alphaen.jpg` | Alpha En | [Modern Yellow Desk Lamp in Minimalist Workspace](https://www.pexels.com/photo/modern-yellow-desk-lamp-in-minimalist-workspace-28461166/) |
+| `public/images/feed/8-davdkuko.jpg` | David Kwewum | [A man is writing on a tablet while sitting at a desk](https://www.pexels.com/photo/a-man-is-writing-on-a-tablet-while-sitting-at-a-desk-17794197/) |
 
-The feed files are cropped to `720 x 1280`. The two new photographs can remain as picture-first posts or be replaced by `1080 x 1920` vertical videos. No claim is made that the photographers or depicted people endorse the simulated products, captions, or research argument.
+The feed files are cropped to `720 x 1280`. Any of them can be replaced by `1080 x 1920` vertical videos. No claim is made that the photographers or depicted people endorse the simulated products, captions, or research argument.
 
 ## Worldview case carousel
 

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Pause, Play } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useRef, useState, type ReactNode } from "react";
+import { imageCreditsByPath } from "@/data/imageCredits";
 import type { FeedVideo } from "@/types/experience";
 
 interface PhoneFrameProps {
@@ -24,6 +25,7 @@ export function PhoneFrame({
   const [mediaFailed, setMediaFailed] = useState(false);
   const [isPlaying, setIsPlaying] = useState(Boolean(video.videoSrc));
   const showVideo = Boolean(video.videoSrc && !mediaFailed);
+  const imageCredit = imageCreditsByPath.get(video.posterSrc);
 
   const togglePlayback = () => {
     const media = videoRef.current;
@@ -142,6 +144,16 @@ export function PhoneFrame({
               <p className="mt-2 text-[0.62rem] font-medium text-[#f6df7e]">
                 {video.disclosure}
               </p>
+            ) : null}
+            {imageCredit && !showVideo ? (
+              <a
+                href={imageCredit.sourceUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-2 inline-block text-[0.58rem] font-medium text-white/55 underline decoration-white/25 underline-offset-2 transition hover:text-white/85"
+              >
+                Photo: {imageCredit.photographer}, {imageCredit.source}
+              </a>
             ) : null}
           </div>
 

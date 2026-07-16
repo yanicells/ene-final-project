@@ -137,7 +137,7 @@ export function OpeningSequence() {
               <div className="absolute left-1/2 top-2 z-20 h-5 w-20 -translate-x-1/2 rounded-full bg-[#111110]" />
               <div className="relative aspect-[9/19.4] overflow-hidden rounded-[2.45rem]">
                 <Image
-                  src="/images/feed/desk-setup.jpg"
+                  src="/images/feed/1-sandrin.jpg"
                   alt="A desk setup inside a simulated phone feed."
                   fill
                   priority

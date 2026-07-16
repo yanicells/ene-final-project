@@ -25,6 +25,14 @@ describe("experience content", () => {
     }
   });
 
+  it("links every feed poster image to an image credit", () => {
+    const creditPaths = new Set(imageCredits.map((credit) => credit.localPath));
+
+    for (const video of feedVideos) {
+      expect(creditPaths.has(video.posterSrc)).toBe(true);
+    }
+  });
+
   it("links every feed citation to the source registry", () => {
     const sourceIds = new Set<string>(researchSources.map((source) => source.id));
 
@@ -59,7 +67,9 @@ describe("experience content", () => {
     );
 
     for (const credit of imageCredits) {
-      expect(credit.sourceUrl).toMatch(/^https:\/\/unsplash\.com\/photos\//);
+      expect(credit.sourceUrl).toMatch(
+        /^https:\/\/(unsplash\.com\/photos\/|www\.pexels\.com\/photo\/)/,
+      );
       expect(credit.photographer.length).toBeGreaterThan(2);
     }
   });

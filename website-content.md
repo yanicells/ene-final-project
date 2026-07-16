@@ -92,7 +92,7 @@ Feedback: Your interest is real. A like, follow, or completed view can help the 
 - Creator: @corners.afterclass
 - Title: A study corner worth saving
 - Caption: saving this corner for the next time I need to focus
-- Transcript: A still, sunlit study corner appears with soft music and a short caption about finding focus. No product or commercial relationship is presented.
+- Transcript: A still study corner appears, with a desk by a bright window and a warm lamp glowing over the bookshelves. Soft music and a short caption about finding focus. No product or commercial relationship is presented.
 
 Actions:
 
@@ -110,7 +110,7 @@ Feedback: Liking one desk photo gives the system another clue about what to show
 - Title: The lamp I kept on my desk
 - Disclosure: Bought with my own money
 - Caption: what I liked, what annoyed me, and whether I would buy it again
-- Transcript: The creator shows an adjustable desk lamp and explains one useful feature, one drawback, and that they purchased it themselves.
+- Transcript: The creator shows the small table lamp beside their reading stack and explains one useful feature, one drawback, and that they purchased it themselves.
 
 Actions:
 
@@ -128,7 +128,7 @@ Feedback: A post can encourage consumption even when the creator was not paid to
 - Title: My late-night study reset
 - Disclosure: Paid partnership with Luma
 - Caption: my late-night study reset with Luma
-- Transcript: A student works beside a warm desk lamp during a polished late-night routine. A paid partnership disclosure identifies the brand relationship.
+- Transcript: A polished late-night wind-down: an open book and notebook on the bed, lit by a warm lamp. A paid partnership disclosure identifies the brand relationship.
 
 Recognition prompt: Is there a commercial relationship here? (Yes / No / Not sure)
 
@@ -148,7 +148,7 @@ Feedback: A clear disclosure can make a creator's commercial relationship easier
 - Title: Three desk upgrades I use daily
 - Disclosure: links and code in bio #affiliate
 - Caption: 3 desk upgrades I would buy again
-- Transcript: A creator films a desk setup and recommends three upgrades. The featured lamp appears with a link, discount code, and brief affiliate label.
+- Transcript: A creator pans across a wooden desk filled with upgrades and recommends three favorites. The featured lamp appears with a link, discount code, and brief affiliate label.
 
 Recognition prompt: Could the creator benefit if you buy? (Yes / No / Not sure)
 
@@ -167,7 +167,7 @@ Feedback: Affiliate posts can resemble ordinary recommendations, and a short lab
 - Creator: @setup.loop
 - Title: This lamp is suddenly everywhere
 - Caption: this desk lamp keeps turning up on my feed
-- Transcript: A slow photo montage moves across rows of similar study desks. The caption notices how the same style of lamp keeps returning across different posts.
+- Transcript: Another cozy study desk appears, centered on the same style of warm lamp beside a candle and handwritten notes. The caption notices how this lamp keeps returning across different posts.
 
 Actions:
 
@@ -185,7 +185,7 @@ Feedback: Seeing the same object repeatedly can make it feel normal or necessary
 - Title: Better light for late nights
 - Disclosure: Advertisement
 - Caption: limited-time offer this week
-- Transcript: A bright studio image presents the Luma Arc as a product advertisement with a limited-time offer and direct invitation to open the product.
+- Transcript: A stylized product shot presents the Luma Arc glowing on a dim desk, with a limited-time offer and direct invitation to open the product.
 
 Actions:
 
@@ -205,7 +205,7 @@ Feedback: Skipping and explicit rejection can both shape the feed, but they do n
 - Title: Voucher available during this stream
 - Disclosure: Simulated shop livestream
 - Caption: live demo. voucher available during this stream
-- Transcript: A livestream-style post invites the viewer to inspect a voucher while a person uses a phone beside a colorful desk setup.
+- Transcript: A livestream-style post invites the viewer to inspect a voucher while the seller takes notes on camera, a phone mounted on a gimbal recording the demo.
 
 Actions:
 
@@ -497,8 +497,16 @@ Official document library. Its own notice warns that some files may be difficult
 
 ### Image credits
 
-The photographs used in the worldview cards are cropped from the linked originals under the Unsplash License. They provide visual context, not research evidence.
+The photographs used in the simulated feed and the worldview cards are cropped from the linked originals under the Pexels and Unsplash licenses. They provide visual context, not research evidence, and no photographer endorses the simulated products or captions.
 
+- Simulation post 1 — Interest — sandrin, Pexels
+- Simulation post 2 — Discovery — Thuan Pham, Pexels
+- Simulation post 3 — Review — Ron Lach, Pexels
+- Simulation post 4 — Lifestyle — Zeynep M., Pexels
+- Simulation post 5 — Recommendation — Elijah Pilchard, Pexels
+- Simulation post 6 — Repetition — Hedefneydii, Pexels
+- Simulation post 7 — Urgency — Alpha En, Pexels
+- Simulation post 8 — Purchase — David Kwewum, Pexels
 - Political recommendation case — Markus Winkler, Unsplash
 - Emotional amplification case — Zac Wolff, Unsplash
 - Palestinian visibility case — Selena Jiménez, Unsplash

@@ -81,9 +81,11 @@ export function ReferencesSection() {
                 Image credits
               </h3>
               <p className="mt-4 max-w-2xl text-xs leading-5 text-stone-600">
-                The photographs used in the worldview cards are cropped from the
-                linked originals under the Unsplash License. They provide visual
-                context, not research evidence.
+                The photographs used in the simulated feed and the worldview
+                cards are cropped from the linked originals under the Pexels and
+                Unsplash licenses. They provide visual context, not research
+                evidence, and no photographer endorses the simulated products or
+                captions.
               </p>
               <div className="mt-6 grid gap-x-8 md:grid-cols-2 xl:grid-cols-3">
                 {imageCredits.map((credit) => (
