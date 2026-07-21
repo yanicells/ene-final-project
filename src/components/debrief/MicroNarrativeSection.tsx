@@ -87,11 +87,12 @@ export function MicroNarrativeSection() {
               uneven success when removing unwanted recommendations. <CitationLink sourceId="vera-2025" />
             </p>
             <p className="mt-4 max-w-xl text-base leading-7 text-stone-600">
-              That is the knot. The individualized story the system feeds on and
-              the correction we push back with are the same kind of signal, and
-              it reads both. A micro narrative that lives only as a preference
-              becomes one more input to the grand narrative it meant to resist.
-              What holds is what stays off the meter.
+              That is the hard part. The individualized story the system feeds
+              on and the correction we push back with are the same kind of
+              signal, and it reads both. A micro narrative that stays only a
+              preference just becomes one more input to the grand narrative it
+              was meant to resist. What actually holds is the part the system
+              never gets to measure.
             </p>
           </MotionReveal>
 

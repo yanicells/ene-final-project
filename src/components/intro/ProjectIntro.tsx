@@ -33,9 +33,9 @@ export function ProjectIntro() {
                 control.
               </p>
               <p className="text-base leading-7 text-stone-500">
-                First you scroll a short feed simulation. Then a research
-                debrief traces how that story forms, how the same ranking moves
-                from products to worldviews, and what resistance actually costs.
+                You scroll a short feed simulation first. Then a research
+                debrief: how that story forms, how the same ranking moves from
+                products to worldviews, and how hard it is to push back.
               </p>
             </div>
             <a
