@@ -65,7 +65,10 @@ export function GrandNarrativeSection() {
           <p className="max-w-3xl text-lg leading-8 text-stone-600">
             This story was about buying. The system that told it was not built
             for buying. It was built to hold attention. Consumption is one story
-            that holds attention. It is not the only one.
+            that holds attention. It is not the only one. The same ranking can
+            arrange a story around a politics, meeting attention paid to one
+            side with more of that side until a worldview starts to feel like
+            the whole feed. <CitationLink sourceId="baumann-2025" />
           </p>
         </MotionReveal>
       </div>

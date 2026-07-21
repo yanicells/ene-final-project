@@ -86,6 +86,13 @@ export function MicroNarrativeSection() {
               its effects. <CitationLink sourceId="rozendaal-2011" /> Users report
               uneven success when removing unwanted recommendations. <CitationLink sourceId="vera-2025" />
             </p>
+            <p className="mt-4 max-w-xl text-base leading-7 text-stone-600">
+              That is the knot. The individualized story the system feeds on and
+              the correction we push back with are the same kind of signal, and
+              it reads both. A micro narrative that lives only as a preference
+              becomes one more input to the grand narrative it meant to resist.
+              What holds is what stays off the meter.
+            </p>
           </MotionReveal>
 
           <MotionReveal className="relative mt-4 border-l border-stone-300 pb-2 pl-8 pt-10 md:pl-12">
